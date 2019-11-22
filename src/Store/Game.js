@@ -11,7 +11,10 @@ const SET_USER = 'SET_USER';
 /**
  * INITIAL STATE
  */
-const gameState = {};
+const gameState = {
+  userName: "",
+  visitedPages: new Array(1).fill(false)
+};
 
 
 /**
@@ -31,7 +34,9 @@ export default function (state = gameState, action) {
   switch (action.type) {
     case SET_USER:
       {
-        return { ...state, userName: action.user }
+        let newVisited = [...state.visitedPages];
+        newVisited[0] = true;
+        return { ...state, visitedPages: newVisited, userName: action.user }
       }
     default:
       return state
