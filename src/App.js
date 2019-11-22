@@ -6,7 +6,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Happy Birthday Edd!</h1>
+        <fieldset>
+          <legend>Welcome, Edd is Old</legend>
+          <h1>Happy Birthday Edd!</h1>
+        </fieldset>
       </header>
     </div>
   );
