@@ -6,19 +6,26 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 
 function HomePage() {
-  const [age, addYear] = useState(31);
+
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <fieldset>
-          <legend>Welcome, Edd is Old</legend>
-          <h1>Happy Birthday Edd! He is {age}</h1>
-          <button onClick={() => addYear(age + 1)}>CLICK</button>
+    <div >
 
-        </fieldset>
+      <fieldset>
+        <legend>Welcome to Edd's Party!</legend>
+        <h1>Happy Birthday Edd!</h1>
+        <p>Wait this is not just a birthday card...I need your help.<br />
+          Will you help?
+          </p>
+        <Link to='/start'>
+          <button>YES</button>
+        </Link>
+        <a href="https://m.wikihow.com/Be-a-Good-Friend">
+          <button>NO</button>
+        </a>
+      </fieldset>
 
-      </header>
+
     </div>
   );
 }
