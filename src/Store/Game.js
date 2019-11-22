@@ -34,7 +34,7 @@ const setUser = (user) => ({ type: SET_USER, user })
 export default function (state = gameState, action) {
   switch (action.type) {
     case SET_USER:
-      return action.user
+      return { ...state, user: action.user }
     default:
       return state
   }
