@@ -3,6 +3,13 @@ import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage'
 import Start from './Start';
 import Page1 from './Pages/Page1'
+import Page2 from './Pages/Page2'
+
+import { connect } from 'react-redux'
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = {}
+
 
 
 class Routes extends Component {
@@ -16,11 +23,22 @@ class Routes extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/start" component={Start} />
           <Route exact path="/1" component={Page1} />
-
+          <Route exact path="/2" component={Page2} />
+          {/* <Route exact path="/3" component={Page3} /> */}
+          {/* <Route exact path="/4" component={Page4} /> */}
         </Switch>
       </div>
     )
   }
 }
+const mapState = state => {
+  return {
+    gameState: state.game
 
-export default Routes;
+  }
+}
+
+export default withStyles(styles)(connect(mapState)(Routes));
+
+
+

@@ -14,7 +14,9 @@ const VISIT_PAGE = 'VISIT_PAGE';
 //REMEMBER TO RETURN TO "" for userName
 const gameState = {
   userName: "Katie",
-  visitedPages: new Array(2).fill(false)
+  totalPages: 5,
+  visitedPages: new Array(5).fill(false),
+
 };
 
 

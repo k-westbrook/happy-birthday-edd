@@ -55,11 +55,11 @@ const styles =
 
 
 
-const Page1 = (props) => {
+const Page2 = (props) => {
   const { classes } = props;
-  const handleGame = (value) => {
-    console.log(value)
-    // props.history.push(evt.target.value)
+  const handleGame = (evt) => {
+
+    props.history.push('/2')
   }
   console.log(props.gameState)
   return (
@@ -70,9 +70,9 @@ const Page1 = (props) => {
           <div>
             <Typography variant='body1'>Hello {props.gameState.userName}, I'm glad you are on board to finding Jimmy. So Pabi found out that Jimmy likes to hang around three places: Starbucks, an abandoned alley, and an isolated warehouse in Ballard. Where should we go first?  </Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={(value) => { handleGame(2) }}>Starbucks</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(3) }}>Abandoned Alley</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(4) }}>Isolated Warehouse</Button>
+              <Button className={classes.button} value={2}>Starbucks</Button>
+              <Button className={classes.button} value={3}>Abandoned Alley</Button>
+              <Button className={classes.button} value={4}>Isolated Warehouse</Button>
             </div>
 
 
@@ -101,4 +101,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page1));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page2));
