@@ -85,10 +85,6 @@ const mapDispatch = dispatch => {
   }
 }
 
-const mapState = state => {
-  return {
-    userName: state.game.userName
-  }
-}
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Start));
+
+export default withStyles(styles)(connect(null, mapDispatch)(Start));

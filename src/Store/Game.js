@@ -6,14 +6,15 @@
  * ACTION TYPES
  */
 const SET_USER = 'SET_USER';
-
+const VISIT_PAGE = 'VISIT_PAGE';
 
 /**
  * INITIAL STATE
  */
+//REMEMBER TO RETURN TO "" for userName
 const gameState = {
-  userName: "",
-  visitedPages: new Array(1).fill(false)
+  userName: "KAtie",
+  visitedPages: new Array(2).fill(false)
 };
 
 
@@ -22,7 +23,7 @@ const gameState = {
  */
 
 export const setUser = (user) => ({ type: SET_USER, user })
-// const getUser = user => ({ type: GET_USER, user })
+export const visitPage = (pageNumber) => ({ type: VISIT_PAGE, pageNumber })
 // const logout = () => ({ type: LOGOUT_USER })
 
 
@@ -37,6 +38,12 @@ export default function (state = gameState, action) {
         let newVisited = [...state.visitedPages];
         newVisited[0] = true;
         return { ...state, visitedPages: newVisited, userName: action.user }
+      }
+    case VISIT_PAGE:
+      {
+        let newVisited = [...state.visitedPages];
+        newVisited[action.pageNumber] = true;
+        return { ...state, visitedPages: newVisited }
       }
     default:
       return state
