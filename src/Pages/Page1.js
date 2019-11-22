@@ -42,8 +42,14 @@ const styles =
   button:
   {
     backgroundColor: 'white',
-    width: "100%",
+    width: "50%",
     marginTop: '2vh'
+  },
+  buttonGroup:
+  {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
   }
 }
 
@@ -62,8 +68,12 @@ const Page1 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='body1'>Hello {props.gameState.userName} </Typography>
-
+            <Typography variant='body1'>Hello {props.gameState.userName}, I'm glad you are on board to finding Jimmy. So Pabi found out that Jimmy likes to hang around three places: Starbucks, an abandoned alley, and an isolated warehouse in Ballard. Where should we go first?  </Typography>
+            <div className={classes.buttonGroup}>
+              <Button className={classes.button}>Starbucks</Button>
+              <Button className={classes.button}>Abandoned Alley</Button>
+              <Button className={classes.button}>Isolated Warehouse</Button>
+            </div>
 
 
           </div>

@@ -61,7 +61,7 @@ const Start = (props) => {
     <div className={classes.pageContainer}>
       <div>
         <Typography variant='body1'>Tonight was supposed to be fun--it was Edd's birthday party. It was supposed to be about Edd. <br />BUT Jimmy "Hook" Baggins made it about him.
-      He's missing. I'm basically a detective. My name is Katie "Sherlock" Westbrook. This is my assistant. Yes, he's a cat but he's also a aspiring model. What is your name? </Typography>
+      He's missing. I'm basically a detective. My name is Katie "Sherlock" Westbrook. This is my assistant, Pabi. Yes, he's a cat but he's also a aspiring model. What is your name? </Typography>
 
       </div>
       <div className={classes.formContainer}>
