@@ -18,10 +18,7 @@ const gameState = {};
  * ACTION CREATORS
  */
 
-export const setUser = (user) => {
-  console.log("HELO")
-  return { type: SET_USER, user }
-}
+export const setUser = (user) => ({ type: SET_USER, user })
 // const getUser = user => ({ type: GET_USER, user })
 // const logout = () => ({ type: LOGOUT_USER })
 
@@ -34,10 +31,9 @@ export default function (state = gameState, action) {
   switch (action.type) {
     case SET_USER:
       {
-        console.log("YES")
-        return { ...state, user: action.user }
+        return { ...state, userName: action.user }
       }
     default:
-      return "HELLO"
+      return state
   }
 }

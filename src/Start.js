@@ -3,6 +3,8 @@ import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 import { setUser } from './Store/Game'
+import { connect } from 'react-redux'
+
 
 
 
@@ -45,13 +47,14 @@ const styles =
   }
 }
 
-const handleSetUser = (evt) => {
-  evt.preventDefault();
-  setUser(evt.target.userName.value);
-}
+
 
 const Start = (props) => {
   const { classes } = props;
+  const handleSetUser = (evt) => {
+    evt.preventDefault();
+    props.handleSetUser(evt.target.userName.value)
+  }
   return (
     <div className={classes.pageContainer}>
       <div>
@@ -72,4 +75,18 @@ const Start = (props) => {
   );
 }
 
-export default withStyles(styles)(Start);
+
+
+const mapDispatch = dispatch => {
+  return {
+    handleSetUser: (userName) => dispatch(setUser(userName))
+  }
+}
+
+const mapState = state => {
+  return {
+    userName: state.game.userName
+  }
+}
+
+export default withStyles(styles)(connect(mapState, mapDispatch)(Start));
