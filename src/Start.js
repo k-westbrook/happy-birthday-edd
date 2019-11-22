@@ -53,7 +53,9 @@ const Start = (props) => {
   const { classes } = props;
   const handleSetUser = (evt) => {
     evt.preventDefault();
-    props.handleSetUser(evt.target.userName.value)
+    props.handleSetUser(evt.target.userName.value);
+    evt.target.userName.value = "";
+    props.history.push('/1')
   }
   return (
     <div className={classes.pageContainer}>
