@@ -5,17 +5,19 @@ import Routes from './Routes.js'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-        <Router>
-          <Routes />
-        </Router>
 
+
+        <fieldset>
+          <legend>Welcome, Edd is Old</legend>
+          <h1>Happy Birthday Edd!</h1>
+        </fieldset>
       </header>
     </div>
   );
 }
 
-export default App;
+export default HomePage;
