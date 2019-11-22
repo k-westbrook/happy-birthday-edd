@@ -39,6 +39,7 @@ export default function (state = gameState, action) {
       {
         let newVisited = [...state.visitedPages];
         newVisited[0] = true;
+        newVisited[1] = true;
         return { ...state, visitedPages: newVisited, userName: action.user }
       }
     case VISIT_PAGE:

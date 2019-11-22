@@ -56,27 +56,25 @@ const styles =
 
 
 
-const Page2 = (props) => {
+const Page4 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
     props.handleVisit(value);
     props.history.push(`/${value}`)
   }
 
-
-  console.log(props.gameState)
   return (
 
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Starbucks</Typography>
-            <Typography variant='body1'> Jimmy isn't here. {props.gameState.userName}, do you want a latte? Nah Nah you're right. We are looking for this dude...I think there are too many people here. At night, Jimmy likes to be alone. </Typography>
+            <Typography variant='h3'>Abandoned Alley</Typography>
+            <Typography variant='body1'> IT'S JIMMY! AND HE IS DEAD!</Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={(value) => { handleGame(2) }}>Starbucks</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(3) }}>Abandoned Alley</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(4) }}>Isolated Warehouse</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(2) }}>Get closer!! Investigate</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(3) }}>Call Police</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(4) }}>Faint</Button>
             </div>
 
 
@@ -105,4 +103,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page2));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page4));

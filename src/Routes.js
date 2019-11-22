@@ -4,9 +4,10 @@ import HomePage from './HomePage'
 import Start from './Start';
 import Page1 from './Pages/Page1'
 import Page2 from './Pages/Page2'
-
+import Page4 from './Pages/Page4'
 import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles';
+import Page3 from './Pages/Page3';
 
 const styles = {}
 
@@ -24,8 +25,8 @@ class Routes extends Component {
           <Route exact path="/start" component={Start} />
           <Route exact path="/1" component={Page1} />
           <Route exact path="/2" component={Page2} />
-          {/* <Route exact path="/3" component={Page3} /> */}
-          {/* <Route exact path="/4" component={Page4} /> */}
+          <Route exact path="/3" component={Page3} />
+          <Route exact path="/4" component={Page4} />
         </Switch>
       </div>
     )

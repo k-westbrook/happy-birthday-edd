@@ -58,10 +58,10 @@ const styles =
 const Page1 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
-    console.log(value)
-    // props.history.push(evt.target.value)
+    props.handleVisit(value);
+    props.history.push(`/${value}`)
   }
-  console.log(props.gameState)
+
   return (
 
     < div className={classes.pageContainer} >
@@ -90,7 +90,7 @@ const Page1 = (props) => {
 
 const mapDispatch = dispatch => {
   return {
-    handleVisit: (pageNumber) => dispatch(visitPage(1))
+    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber))
   }
 }
 
