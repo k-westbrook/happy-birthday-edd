@@ -5,17 +5,19 @@ import Routes from './Routes.js'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 
-function HomePage() {
-  const [age, addYear] = useState(31);
-
+function No() {
+  const [age] = useState(20);
   return (
     <div className="App">
       <header className="App-header">
         <fieldset>
           <legend>Welcome, Edd is Old</legend>
           <h1>Happy Birthday Edd! He is {age}</h1>
-          <button onClick={() => addYear(age + 1)}>CLICK</button>
+          <Link to='/no'>
+            <button>NO
 
+          </button>
+          </Link>
         </fieldset>
 
       </header>
@@ -23,4 +25,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default No;
