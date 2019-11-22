@@ -5,7 +5,7 @@ import Routes from './Routes.js'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import { sizing, border, borderColor } from '@material-ui/system';
-import { Typography, InputLabel, Input } from '@material-ui/core';
+import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 
 
 
@@ -18,7 +18,7 @@ const styles =
   },
   nameForm:
   {
-    backgroundColor: '#fafafa',
+
     width: '30vw'
   },
   formContainer:
@@ -31,11 +31,20 @@ const styles =
   {
     width: '100%',
     fontSize: '100%',
-    padding: '1vh'
+    padding: '1vh',
+    backgroundColor: 'white',
   },
   inputLabel:
   {
-    fontSize: '30%'
+    fontSize: '100%',
+    color: 'light-grey',
+    backgroundColor: 'white',
+  },
+  button:
+  {
+    backgroundColor: 'white',
+    width: "100%",
+    marginTop: '2vh'
   }
 }
 
@@ -49,10 +58,12 @@ const Start = (props) => {
 
       </div>
       <div className={classes.formContainer}>
-        <form className={classes.nameForm}>
-          <InputLabel htmlFor="userName">Name</InputLabel>
-          <Input className={classes.input} id="userName" name='userName'></Input>
+        <form className={classes.nameForm} >
+          <InputLabel className={classes.inputLabel} htmlFor="userName">Name</InputLabel>
+          <Input className={classes.input} id="userName" name='userName' required placeholder="Enter Your Name"></Input>
+          <Button className={classes.button}>Submit</Button>
         </form>
+
       </div>
 
     </div>
