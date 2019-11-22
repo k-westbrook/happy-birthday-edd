@@ -1,5 +1,5 @@
-import axios from 'axios';
-import history from '../history'
+// import axios from 'axios';
+// import history from '../history'
 
 
 /**
@@ -18,7 +18,10 @@ const gameState = {};
  * ACTION CREATORS
  */
 
-const setUser = (user) => ({ type: SET_USER, user })
+export const setUser = (user) => {
+  console.log("HELO")
+  return { type: SET_USER, user }
+}
 // const getUser = user => ({ type: GET_USER, user })
 // const logout = () => ({ type: LOGOUT_USER })
 
@@ -30,8 +33,11 @@ const setUser = (user) => ({ type: SET_USER, user })
 export default function (state = gameState, action) {
   switch (action.type) {
     case SET_USER:
-      return { ...state, user: action.user }
+      {
+        console.log("YES")
+        return { ...state, user: action.user }
+      }
     default:
-      return state
+      return "HELLO"
   }
 }
