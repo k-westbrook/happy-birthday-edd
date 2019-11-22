@@ -10,14 +10,10 @@ class Routes extends Component {
     const { classes } = this.props;
     return (
       <div>
-
         <Switch >
           <Route exact path="/" component={HomePage} />
           <Route exact path="/start" component={Start} />
-
         </Switch>
-
-
       </div>
     )
   }

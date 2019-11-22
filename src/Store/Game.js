@@ -2,8 +2,6 @@ import axios from 'axios';
 import history from '../history'
 
 
-
-
 /**
  * ACTION TYPES
  */
@@ -23,8 +21,6 @@ const gameState = {};
 const setUser = (user) => ({ type: SET_USER, user })
 // const getUser = user => ({ type: GET_USER, user })
 // const logout = () => ({ type: LOGOUT_USER })
-
-
 
 
 

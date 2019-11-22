@@ -7,10 +7,8 @@ import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 function HomePage() {
 
-
   return (
     <div >
-
       <fieldset>
         <legend>Welcome to Edd's Party!</legend>
         <h1>Happy Birthday Edd!</h1>
@@ -24,8 +22,6 @@ function HomePage() {
           <button>NO</button>
         </a>
       </fieldset>
-
-
     </div>
   );
 }
