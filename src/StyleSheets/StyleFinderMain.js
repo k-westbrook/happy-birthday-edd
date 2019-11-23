@@ -1,6 +1,6 @@
 export const styleFinder = () => {
   let styles;
-  if (window.matchMedia("(max-width: 600px)").matches) {
+  if (window.matchMedia("(max-width: 400px)").matches) {
     styles = {
       pageContainer:
       {
@@ -19,23 +19,33 @@ export const styleFinder = () => {
         color: 'white',
         height: '35vh',
         borderStyle: 'solid',
-        padding: '2vh'
+        padding: '2vh',
+        marginLeft: '3vw',
+        marginRight: '3vw'
       },
       header:
       {
         fontSize: '12vh'
       },
+      FieldSet:
+      {
+        height: '100%'
+      },
       Paper: {
         marginLeft: '2vw',
-        marginRight: '1vw',
-        height: '30vh',
-        padding: '1vh'
+        marginRight: '2vw',
+        minHeight: '25vh',
+        padding: '2vh'
 
       },
       textContainer:
       {
-        marginTop: '1vh',
-        marginBottom: '3vh'
+        height: '20vh'
+      },
+      text:
+      {
+        fontSize: '2.5vh',
+
       },
       paperContainer:
       {

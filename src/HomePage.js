@@ -14,10 +14,10 @@ function HomePage(props) {
       </div>
       <div className={classes.paperContainer}>
         <Paper className={classes.Paper}>
-          <fieldset>
-            <legend>Welcome to Edd's Party!</legend>
+          <fieldset className={classes.FieldSet}>
+            <legend className={classes.text}><b>Welcome to Edd's Party!</b></legend>
             <div className={classes.textContainer}>
-              <Typography variant='body1'>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.</Typography>
+              <Typography variant='body1' className={classes.text}>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.</Typography>
             </div>
             <Link to='/quiz'>
               <button>YES</button>
@@ -28,6 +28,7 @@ function HomePage(props) {
           </fieldset>
         </Paper>
       </div>
+
     </div>
   );
 }
