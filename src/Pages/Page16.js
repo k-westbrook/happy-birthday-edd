@@ -56,7 +56,7 @@ const styles =
 
 
 
-const Page11 = (props) => {
+const Page16 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
 
@@ -71,25 +71,14 @@ const Page11 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Far down the Alley</Typography>
-            <Typography variant='body1'> LOOK! It's a random teen. They are eating Molly Moon's and I know 1+1 =death. What do you think {props.gameState.userName}? Ok they are running let's run after them!!! </Typography>
-            {(props.gameState.visitedPages[5].visited) ?
-              <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(5) }}>Head Back to Crime Scene</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
+            <Typography variant='h3'>Interrogate the Youth</Typography>
+            <Typography variant='body1'> The youth tells us that they are a straight A kid and like to go on brisk PNW walks at night. I guess they are warm blooded because ice cream in November? They said they saw two men arguing?! They say the guy who is dead screamed some name Zed or Ted maybe? But he was eating chocolate. Hmmm So guess we are narrowing it down. </Typography>
 
-              </div>
-              :
-              <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(6) }}>Head Back to Crime Scene</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(16) }}>{props.gameState.visitedPages[16].button}</Button>
+            <div className={classes.buttonGroup}>
+              <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
 
-              </div>
-            }
-
-
-
-
+            </div>
           </div>
 
           :
@@ -116,4 +105,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page11));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page16));

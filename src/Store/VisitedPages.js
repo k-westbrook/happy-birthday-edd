@@ -82,6 +82,12 @@ export const visitedPages = [
     index: 16,
     visited: false,
     button: "Chase"
+  },
+
+  {
+    index: 17,
+    visited: false,
+    button: "Go to Party and Discuss Case"
   }
 
 ]
