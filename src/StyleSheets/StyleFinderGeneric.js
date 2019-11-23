@@ -1,3 +1,6 @@
+import main from '../images/main.jpeg'
+
+
 export const styleFinder = () => {
   let styles;
   if (window.matchMedia("(max-width: 600px)").matches) {
@@ -5,12 +8,33 @@ export const styleFinder = () => {
       pageContainer:
       {
         display: 'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        backgroundColor: 'black',
+        width: '100vw',
+        minHeight: '100vh'
       },
-      button:
+      contentContainer:
       {
-        backgroundColor: 'white',
-        width: "50%",
+        marginTop: '5vh',
+        padding: '1vh',
+
+      },
+      title:
+      {
+        marginBottom: '3vh',
+        color: 'red'
+      },
+      text:
+      {
+        color: 'white',
+        borderStyle: 'double',
+        padding: '2vh',
+        minHeight: '30vh'
+      },
+      submitButton:
+      {
+        width: "60%",
+        height: '7vh',
         marginTop: '2vh'
       },
       buttonGroup:
@@ -18,8 +42,36 @@ export const styleFinder = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
+      },
+      formContainer:
+      {
+        padding: '3vh',
+        backgroundColor: 'white',
+        minHeight: '10vh'
+      },
+      nameForm:
+      {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+      },
+      input:
+      {
+        width: '80%',
+        marginBottom: '2vh',
+        color: 'black'
+      },
+      inputLabel:
+      {
+        fontSize: '4vh',
+        marginBottom: '2vh',
+        color: 'black'
       }
+
     }
+
+
   } else {
     styles = {
       pageContainer:

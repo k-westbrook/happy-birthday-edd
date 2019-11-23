@@ -54,10 +54,13 @@ export const styleFinder = () => {
       buttonGroup:
       {
         display: 'flex',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
+        marginTop: '2vh',
+        marginBottom: '2vh'
       },
       button: {
-        width: '40%'
+        width: '40%',
+        fontSize: '3vh'
       }
     }
   } else {
