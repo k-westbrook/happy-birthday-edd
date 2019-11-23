@@ -67,8 +67,26 @@ export const styleFinder = () => {
         fontSize: '4vh',
         marginBottom: '2vh',
         color: 'black'
+      },
+      storyContent: {
+        color: 'white',
+        fontSize: '2.5vh',
+        marginBottom: '6vh'
+      },
+      pageTitle:
+      {
+        color: 'red',
+        marginBottom: '3vh'
+      },
+      storyContainer:
+      {
+        marginTop: '5vh',
+        padding: '2vh'
+      },
+      button: {
+        width: '80%',
+        marginBottom: '3vh'
       }
-
     }
 
 
