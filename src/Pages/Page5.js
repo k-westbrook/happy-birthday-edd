@@ -56,12 +56,13 @@ const styles =
 
 
 
-const Page4 = (props) => {
+const Page5 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
-    props.handleVisit(value);
+
     props.history.push(`/${value}`)
   }
+
 
   return (
 
@@ -69,10 +70,10 @@ const Page4 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Isolated Warehouse</Typography>
-            <Typography variant='body1'> I'm not sure we are supposed to be here. Pabi says he thinks Jimmy likes to be outside a lot. So that might help.</Typography>
+            <Typography variant='h3'>Abandoned Alley</Typography>
+            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm.</Typography>
             <div className={classes.buttonGroup}>
-              {props.gameState.visitedPages.slice(2, 5).map((button) => {
+              {props.gameState.visitedPages.slice(5, 8).map((button) => {
 
                 if (!button.visited) {
                   return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
@@ -112,4 +113,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page4));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page5));

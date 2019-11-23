@@ -59,9 +59,14 @@ const styles =
 const Page4 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
-    props.handleVisit(value);
+    props.handleVisit(2);
+    props.handleVisit(4);
+    props.handleVisit(5);
+    props.handleVisit(6);
+    props.handleVisit(7);
     props.history.push(`/${value}`)
   }
+
 
   return (
 
@@ -72,9 +77,18 @@ const Page4 = (props) => {
             <Typography variant='h3'>Abandoned Alley</Typography>
             <Typography variant='body1'> IT'S JIMMY! AND HE IS DEAD!</Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={(value) => { handleGame(2) }}>Get closer!! Investigate</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(3) }}>Call Police</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(4) }}>Faint</Button>
+              {props.gameState.visitedPages.slice(5, 8).map((button) => {
+
+                if (!button.visited) {
+                  return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  )
+                } else {
+                  return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  )
+
+                }
+              })
+              }
             </div>
 
 
