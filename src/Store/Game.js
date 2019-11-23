@@ -16,7 +16,7 @@ const END_GAME_BAD = 'END_GAME_BAD';
 //REMEMBER TO RETURN TO "" for userName
 const gameState = {
   userName: "Katie",
-  totalPages: 5,
+  totalPages: 8,
   visitedPages: visitedPages
 
 };
@@ -52,7 +52,16 @@ export default function (state = gameState, action) {
         return { ...state, visitedPages: newVisited }
       }
     case END_GAME_BAD:
-      return state;
+      {
+        let newVisited = [...visitedPages];
+
+        for (let i = 0; i < newVisited.length; i++) {
+          newVisited[i].visited = false;
+        }
+        return {
+          ...state, visitedPages: newVisited, userName: ""
+        }
+      };
     default:
       return state
   }

@@ -71,7 +71,7 @@ const Page5 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Abandoned Alley</Typography>
-            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm.</Typography>
+            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm. Rustle, Rustle, there is a lookie loo</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(5, 8).map((button) => {
 
