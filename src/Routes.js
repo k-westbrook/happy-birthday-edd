@@ -35,6 +35,7 @@ import Page5 from './Pages/Page5'
 import Page8 from './Pages/Page8'
 import Page6 from './Pages/Page6'
 import Page9 from './Pages/Page9'
+import Quiz from './Quiz';
 
 const styles = {}
 
@@ -51,7 +52,7 @@ class Routes extends Component {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/start" component={Start} />
           <Route exact path="/end" component={End} />
-
+          <Route exact path="/quiz" component={Quiz} />
           <Route exact path="/1" component={Page1} />
           <Route exact path="/2" component={Page2} />
           <Route exact path="/3" component={Page3} />

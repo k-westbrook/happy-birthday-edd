@@ -14,7 +14,7 @@ function HomePage() {
         <p>Wait this is not just a birthday card...I need your help.<br />
           Will you help?
           </p>
-        <Link to='/start'>
+        <Link to='/quiz'>
           <button>YES</button>
         </Link>
         <a href="https://m.wikihow.com/Be-a-Good-Friend">
