@@ -56,15 +56,11 @@ const styles =
 
 
 
-const Page9 = (props) => {
+const Page10 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
-    props.handleVisit(9);
-    props.handleVisit(10);
-    props.handleVisit(11);
-    if (value === 12) {
-      props.handleVisit(12);
-    }
+
+    props.handleVisit(value);
     props.history.push(`/${value}`)
   }
 
@@ -75,11 +71,11 @@ const Page9 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Guy in Sunglasses</Typography>
-            <Typography variant='body1'> Wow, we really push that guy in the sunglasses or George. If that is his real name... He said he works for a competing barista. What? Did you know that Jimmy was a pretentious coffee person? Apparently, he was stealing coffee roasting tricks from a small coffee shop in Phinney Ridge. He said that Jimmy had messaged him to meet tonight at 8 but Jimmy was already dead when he got there. He said he did smell a chocolate scent but saw no one else </Typography>
-            {(!props.gameState.visitedPages[10].visited) ?
+            <Typography variant='h3'>Evidence at the scene of the crime</Typography>
+            <Typography variant='body1'> LOOK! Pabi is the real MVP. He's by the dumpster and instagramming himself. But that's not cool, it's a crime scene, not a photo shoot. I swear. BUT LOOK. A bloody rag...the murderer didn't do well at hiding the evidence. Hmmm, under the rag is a bushel of roses? They look fresh.</Typography>
+            {(!props.gameState.visitedPages[9].visited) ?
               <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(10) }}>{props.gameState.visitedPages[10].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(9) }}>{props.gameState.visitedPages[9].button}</Button>
                 <Button className={classes.button} onClick={(value) => { handleGame(12) }}>{props.gameState.visitedPages[12].button}</Button>
 
               </div>
@@ -97,8 +93,11 @@ const Page9 = (props) => {
                   }
                 })
                 }
-              </div>
 
+
+
+
+              </div>
             }
           </div>
           :
@@ -125,4 +124,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page9));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page10));

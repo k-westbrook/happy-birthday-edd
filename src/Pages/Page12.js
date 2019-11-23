@@ -2,7 +2,7 @@ import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
-import { visitPage } from '../Store/Game'
+import { endGameBad } from '../Store/Game'
 import { connect } from 'react-redux'
 
 
@@ -56,11 +56,11 @@ const styles =
 
 
 
-const Page5 = (props) => {
+const Page12 = (props) => {
   const { classes } = props;
-  const handleGame = (value) => {
-    props.handleVisit(value);
-    props.history.push(`/${value}`)
+  const endGame = () => {
+    props.endGame();
+    props.history.push(`/start`)
   }
 
 
@@ -70,21 +70,10 @@ const Page5 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Abandoned Alley</Typography>
-            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm. Rustle, Rustle, there is a lookie loo but we could go look for others</Typography>
+            <Typography variant='h3'>THE END</Typography>
+            <Typography variant='body1'> You can go back to the party {props.gameState.userName}.I'm doing real work and need to find the truth. ***you head back*** Katie and Pabi texted everyone that you bailed on the investigation and now no one wants to be your friend. Especially Edd. He gives you the worst look EVER.</Typography>
             <div className={classes.buttonGroup}>
-              {props.gameState.visitedPages.slice(9, 12).map((button) => {
-
-                if (!button.visited) {
-                  return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                  )
-                } else {
-                  return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                  )
-
-                }
-              })
-              }
+              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>
 
 
@@ -102,7 +91,7 @@ const Page5 = (props) => {
 
 const mapDispatch = dispatch => {
   return {
-    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber))
+    endGame: () => dispatch(endGameBad())
   }
 }
 
@@ -113,4 +102,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page5));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page12));

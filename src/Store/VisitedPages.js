@@ -57,6 +57,26 @@ export const visitedPages = [
     index: 11,
     visited: false,
     button: "Interrogtae a random person"
+  },
+  {
+    index: 12,
+    visited: false,
+    button: "Go Back to Party"
+  },
+  {
+    index: 13,
+    visited: false,
+    button: "Go to rival coffee shop"
+  },
+  {
+    index: 14,
+    visited: false,
+    button: "Eat at Dick's"
+  },
+  {
+    index: 15,
+    visited: false,
+    button: "Interrogate Edd"
   }
 
 ]
