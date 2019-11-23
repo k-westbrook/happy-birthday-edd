@@ -15,7 +15,7 @@ const ANSWER_QUIZ = 'ANSWER_QUIZ';
  */
 //REMEMBER TO RETURN TO "" for userName
 const gameState = {
-  userName: "Katie",
+  userName: "Detective",
   totalPages: 8,
   visitedPages: visitedPages,
   quizAnswer: ""

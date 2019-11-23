@@ -90,7 +90,7 @@ function Quiz(props) {
             <Typography variant='body1'>Frans, the ex co worker from Starbucks Roastery</Typography>
           </div>
 
-          <Button className={classes.button} type='submit'>Hello</Button>
+          <Button className={classes.button} type='submit'>Let's get them</Button>
 
         </form >
       </fieldset>

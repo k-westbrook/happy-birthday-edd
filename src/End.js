@@ -59,8 +59,8 @@ const styles =
 const End = (props) => {
   const { classes } = props;
   const endGame = () => {
-   props.endGame();
-    props.history.push(`/start`)
+    props.endGame();
+    props.history.push(`/quiz`)
   }
 
 
@@ -72,6 +72,13 @@ const End = (props) => {
           <div>
             <Typography variant='h3'>THE END</Typography>
             <Typography variant='body1'> Congrats {props.gameState.userName}!! AND HAPPY BIRTHDAY EDD! YOU AREN'T A REAL KILLER BUT YOU KILL PEOPLE WITH LAUGHTER</Typography>
+            <Typography variant='body1'> You thought {props.gameState.quizAnswer} was the killer!</Typography>
+            {(props.gameState.quizAnswer === "Edd") ?
+              <Typography variant='body1'> You are smart.</Typography>
+              :
+              <Typography variant='body1'> My, oh my, we have learned..</Typography>
+
+            }
             <div className={classes.buttonGroup}>
               <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>

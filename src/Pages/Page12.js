@@ -60,7 +60,7 @@ const Page12 = (props) => {
   const { classes } = props;
   const endGame = () => {
     props.endGame();
-    props.history.push(`/start`)
+    props.history.push(`/quiz`)
   }
 
 

@@ -83,6 +83,7 @@ const Page13 = (props) => {
               {(!props.gameState.visitedPages[14].visited) &&
                 <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
               }
+              <Button className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
 
             </div>
             }
