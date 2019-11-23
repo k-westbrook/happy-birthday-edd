@@ -77,6 +77,11 @@ export const visitedPages = [
     index: 15,
     visited: false,
     button: "Interrogate Edd"
+  },
+  {
+    index: 16,
+    visited: false,
+    button: "Chase"
   }
 
 ]

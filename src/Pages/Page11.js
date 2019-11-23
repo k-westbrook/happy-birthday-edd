@@ -71,35 +71,27 @@ const Page11 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Evidence at the scene of the crime</Typography>
-            <Typography variant='body1'> LOOK! Pabi is the real MVP. He's by the dumpster and instagramming himself. But that's not cool, it's a crime scene, not a photo shoot. I swear. BUT LOOK. A bloody rag...the murderer didn't do well at hiding the evidence. Hmmm, under the rag is a bushel of roses? They look fresh.</Typography>
-            {(!props.gameState.visitedPages[9].visited) ?
+            <Typography variant='h3'>Far down the Alley</Typography>
+            <Typography variant='body1'> LOOK! It's a random teen. They are eating Molly Moon's and I know 1+1 =death. What do you think {props.gameState.userName}? Ok they are running let's run after them!!! </Typography>
+            {(props.gameState.visitedPages[5].visited) ?
               <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(9) }}>{props.gameState.visitedPages[9].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(12) }}>{props.gameState.visitedPages[12].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(5) }}>Head Back to Crime Scene</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
 
               </div>
               :
               <div className={classes.buttonGroup}>
-                {props.gameState.visitedPages.slice(13, 16).map((button) => {
-
-                  if (!button.visited) {
-                    return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                    )
-                  } else {
-                    return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                    )
-
-                  }
-                })
-                }
-
-
-
+                <Button className={classes.button} onClick={(value) => { handleGame(6) }}>Head Back to Crime Scene</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
 
               </div>
             }
+
+
+
+
           </div>
+
           :
           <div>
             <Typography variant='h3'>Page Loading...</Typography>
