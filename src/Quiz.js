@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux'
-import { visitPage, setAnswer, setQuizAnswer } from './Store/Game'
-import { Typography, Button } from '@material-ui/core';
+import { visitPage, setQuizAnswer } from './Store/Game'
+import { Typography, Button, ButtonBase } from '@material-ui/core';
 
 const styles =
 {
@@ -24,19 +24,20 @@ const styles =
 function Quiz(props) {
   const { classes } = props;
   const handleSubmit = (evt) => {
+    props.setAnswer(evt.target.killer.value);
     props.handleVisit(30);
     props.handleVisit(1);
-    props.
-      props.history.push(`/1`)
+
+    props.history.push(`/1`)
   }
   return (
-    <div onSubmit={handleSubmit}>
+    <div >
       <fieldset>
         <legend>But first..who do you think the killer will be</legend>
         <h1>Select The Person Most Likely</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className={classes.radioGroup}>
-            <input type="radio" name="killer" value="Pabi" checked />
+            <input type="radio" name="killer" value="Pabi" />
             <Typography variant='body1'>Pabi the cat</Typography>
           </div>
           <div className={classes.radioGroup}>
@@ -88,7 +89,9 @@ function Quiz(props) {
             <input type="radio" name="killer" value="Frans" />
             <Typography variant='body1'>Frans, the ex co worker from Starbucks Roastery</Typography>
           </div>
-          <Button className={classes.button}> Submit</Button>
+
+          <Button className={classes.button} type='submit'>Hello</Button>
+
         </form >
       </fieldset>
     </div>
