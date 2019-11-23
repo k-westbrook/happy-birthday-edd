@@ -30,6 +30,7 @@ class Routes extends Component {
           <Route exact path="/3" component={Page3} />
           <Route exact path="/4" component={Page4} />
           <Route exact path="/5" component={Page5} />
+          <Route exact path="/7" component={Page8} />
           <Route exact path="/8" component={Page8} />
         </Switch>
       </div>

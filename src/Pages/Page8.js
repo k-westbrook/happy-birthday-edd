@@ -2,7 +2,7 @@ import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
-import { visitPage } from '../Store/Game'
+import { endGameBad } from '../Store/Game'
 import { connect } from 'react-redux'
 
 
@@ -59,8 +59,8 @@ const styles =
 const Page5 = (props) => {
   const { classes } = props;
   const endGame = () => {
-
-    props.history.push(`/start}`)
+    props.endGame();
+    props.history.push(`/start`)
   }
 
 
@@ -91,7 +91,7 @@ const Page5 = (props) => {
 
 const mapDispatch = dispatch => {
   return {
-    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber))
+    endGame: () => dispatch(endGameBad())
   }
 }
 
