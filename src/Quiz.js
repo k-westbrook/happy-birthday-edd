@@ -28,7 +28,7 @@ function Quiz(props) {
     props.handleVisit(30);
     props.handleVisit(1);
 
-    props.history.push(`/1`)
+    props.history.push(`/start`)
   }
   return (
     <div >
