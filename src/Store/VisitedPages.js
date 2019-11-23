@@ -151,5 +151,11 @@ export const visitedPages = [
     index: 28,
     visited: false,
     button: "Confront Rose"
+  },
+  ,
+  {
+    index: 29,
+    visited: false,
+    button: "Have a drink with a local serial killer"
   }
 ]
