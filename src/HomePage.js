@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Link } from 'react-router-dom'
+import { styleFinder } from './StyleSheets/StyleFinderMain';
+import { withStyles } from '@material-ui/core/styles';
 
 
 function HomePage() {
@@ -25,4 +27,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default withStyles(styleFinder())(HomePage);

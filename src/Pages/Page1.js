@@ -1,5 +1,5 @@
 import React from 'react';
-import { styleFinder } from './StyleFinderGeneric';
+import { styleFinder } from '../StyleSheets/StyleFinderGeneric';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, Button } from '@material-ui/core';
 import { visitPage } from '../Store/Game'
