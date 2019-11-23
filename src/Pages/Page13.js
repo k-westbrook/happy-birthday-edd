@@ -73,20 +73,18 @@ const Page13 = (props) => {
           <div>
             <Typography variant='h3'>Local Coffee Shop</Typography>
             <Typography variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It is a employee of the month poster! They tied this month! It looks like Edd usually gets it from the previous months. I didn't even know Edd worked here! I knew Jimmy was in our friend group but I thought they worked at the Starbucks Roastery! HMMMMM</Typography>
-            {(!props.gameState.visitedPages[25].visited) ?
-              <div className={classes.buttonGroup}>
+            {<div className={classes.buttonGroup}>
+              {(!props.gameState.visitedPages[25].visited) &&
+                < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
+              }
+              {(!props.gameState.visitedPages[14].visited) &&
                 <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(26) }}>{props.gameState.visitedPages[26].button}</Button>
+              }
+              {(!props.gameState.visitedPages[14].visited) &&
                 <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
+              }
 
-              </div>
-              :
-              <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(26) }}>{props.gameState.visitedPages[26].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
-
-              </div>
+            </div>
             }
           </div>
           :

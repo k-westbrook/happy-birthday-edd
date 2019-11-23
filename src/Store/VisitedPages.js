@@ -152,7 +152,7 @@ export const visitedPages = [
     visited: false,
     button: "Confront Rose"
   },
-  ,
+
   {
     index: 29,
     visited: false,
