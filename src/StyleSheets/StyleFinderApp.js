@@ -33,6 +33,7 @@ export const styleFinder = () => {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundImage: `url(${main})`,
+        color: 'white'
       }
     }
   }

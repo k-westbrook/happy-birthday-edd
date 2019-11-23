@@ -53,7 +53,11 @@ export const styleFinder = () => {
       },
       buttonGroup:
       {
-        display: 'flex'
+        display: 'flex',
+        justifyContent: 'space-evenly'
+      },
+      button: {
+        width: '40%'
       }
     }
   } else {

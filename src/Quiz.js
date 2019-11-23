@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux'
 import { visitPage, setQuizAnswer } from './Store/Game'
-import { Typography, Button, ButtonBase } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 
 const styles =
 {
@@ -32,7 +32,7 @@ function Quiz(props) {
   return (
     <div >
       <fieldset>
-        <legend>But first..who do you think the killer will be</legend>
+        <legend>But first..who do you think the criminal will be</legend>
         <h1>Select The Person Most Likely</h1>
         <form onSubmit={handleSubmit}>
           <div className={classes.radioGroup}>

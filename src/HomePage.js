@@ -22,12 +22,12 @@ function HomePage(props) {
           <fieldset className={classes.FieldSet}>
             <legend className={classes.text}><b>Welcome to Edd's Party!</b></legend>
             <div className={classes.textContainer}>
-              <Typography variant='body1' className={classes.text}>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.</Typography>
+              <Typography variant='body1' className={classes.text}>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.Will you?</Typography>
             </div>
             <div className={classes.buttonGroup}>
-              <Button onClick={handleYes}>YES</Button>
+              <Button variant='contained' className={classes.button} onClick={handleYes}>YES</Button>
 
-              <Button href='https://m.wikihow.com/Be-a-Good-Friend'>NO</Button>
+              <Button className={classes.button} variant='contained' href='https://m.wikihow.com/Be-a-Good-Friend'>NO</Button>
             </div>
           </fieldset>
 
