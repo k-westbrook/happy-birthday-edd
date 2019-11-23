@@ -3,32 +3,40 @@ import logo from './logo.svg';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux'
-import { visitPage } from './Store/Game'
-import { Typography } from '@material-ui/core';
+import { visitPage, setAnswer, setQuizAnswer } from './Store/Game'
+import { Typography, Button } from '@material-ui/core';
 
 const styles =
 {
   radioGroup:
   {
     display: 'flex'
+  },
+  button:
+  {
+    backgroundColor: 'white',
+    width: "50%",
+    marginTop: '2vh'
   }
 };
 
 
 function Quiz(props) {
   const { classes } = props;
-  const handleVisit = () => {
+  const handleSubmit = (evt) => {
     props.handleVisit(30);
-    props.history.push(`/1`)
+    props.handleVisit(1);
+    props.
+      props.history.push(`/1`)
   }
   return (
-    <div >
+    <div onSubmit={handleSubmit}>
       <fieldset>
         <legend>But first..who do you think the killer will be</legend>
         <h1>Select The Person Most Likely</h1>
         <form>
           <div className={classes.radioGroup}>
-            <input type="radio" name="killer" value="Pabi" />
+            <input type="radio" name="killer" value="Pabi" checked />
             <Typography variant='body1'>Pabi the cat</Typography>
           </div>
           <div className={classes.radioGroup}>
@@ -80,14 +88,16 @@ function Quiz(props) {
             <input type="radio" name="killer" value="Frans" />
             <Typography variant='body1'>Frans, the ex co worker from Starbucks Roastery</Typography>
           </div>
-        </form>
+          <Button className={classes.button}> Submit</Button>
+        </form >
       </fieldset>
     </div>
   );
 }
 const mapDispatch = dispatch => {
   return {
-    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber))
+    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber)),
+    setAnswer: (answer) => dispatch(setQuizAnswer(answer))
   }
 }
 
