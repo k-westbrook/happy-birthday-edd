@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom'
 import HomePage from './HomePage'
 import Start from './Start';
 import End from './End';
-
 import Page1 from './Pages/Page1'
 import Page10 from './Pages/Page10'
 import Page11 from './Pages/Page11'
@@ -14,7 +13,6 @@ import Page16 from './Pages/Page16'
 import Page17 from './Pages/Page17'
 import Page18 from './Pages/Page18'
 import Page15 from './Pages/Page15'
-
 import Page2 from './Pages/Page2'
 import Page21 from './Pages/Page21'
 import Page22 from './Pages/Page22'
@@ -23,13 +21,9 @@ import Page24 from './Pages/Page24'
 import Page25 from './Pages/Page25'
 import Page26 from './Pages/Page26'
 import Page27 from './Pages/Page27'
-
 import Page28 from './Pages/Page28'
 import Page29 from './Pages/Page29'
-
 import Page4 from './Pages/Page4'
-import { connect } from 'react-redux'
-import { withStyles } from '@material-ui/core/styles';
 import Page3 from './Pages/Page3';
 import Page5 from './Pages/Page5'
 import Page8 from './Pages/Page8'
@@ -37,7 +31,7 @@ import Page6 from './Pages/Page6'
 import Page9 from './Pages/Page9'
 import Quiz from './Quiz';
 
-const styles = {}
+
 
 
 
@@ -45,7 +39,6 @@ class Routes extends Component {
 
 
   render() {
-    // const { classes } = this.props;
     return (
       <div>
         <Switch >
@@ -93,14 +86,8 @@ class Routes extends Component {
     )
   }
 }
-const mapState = state => {
-  return {
-    gameState: state.game
 
-  }
-}
-
-export default withStyles(styles)(connect(mapState)(Routes));
+export default Routes;
 
 
 
