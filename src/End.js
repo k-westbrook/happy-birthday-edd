@@ -62,8 +62,6 @@ const End = (props) => {
     props.endGame();
     props.history.push(`/quiz`)
   }
-
-
   return (
 
     < div className={classes.pageContainer} >

@@ -87,7 +87,7 @@ function Quiz(props) {
           </div>
           <div className={classes.radioGroup}>
             <input type="radio" name="killer" value="Frans" />
-            <Typography variant='body1'>Frans, the ex co worker from Starbucks Roastery</Typography>
+            <Typography variant='body1'>Frans,the ex co worker from Starbucks Roastery</Typography>
           </div>
 
           <Button className={classes.button} type='submit'>Let's get them</Button>
