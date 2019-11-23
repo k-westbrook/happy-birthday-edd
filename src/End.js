@@ -59,7 +59,7 @@ const styles =
 const End = (props) => {
   const { classes } = props;
   const endGame = () => {
-
+   props.endGame();
     props.history.push(`/start`)
   }
 
@@ -88,7 +88,11 @@ const End = (props) => {
 }
 
 
-
+const mapDispatch = dispatch => {
+  return {
+    endGame: () => dispatch(endGameBad())
+  }
+}
 
 
 const mapState = state => {
@@ -98,4 +102,5 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, null)(End));
+
+export default withStyles(styles)(connect(mapState, mapDispatch)(End));

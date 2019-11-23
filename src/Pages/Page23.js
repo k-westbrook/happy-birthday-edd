@@ -59,7 +59,7 @@ const styles =
 const Page8 = (props) => {
   const { classes } = props;
   const endGame = () => {
-    props.endGame();
+
     props.history.push(`/end`)
   }
 
