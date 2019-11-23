@@ -74,7 +74,7 @@ const Page8 = (props) => {
             <Typography variant='body1'> Edd starts stuttering and can't come up with where he was or where the chocolate is from
             He then confesses that he killed that sob because he wrote him out of his coffee shop business plan. Edd couldn't take it and waited from him by eating chocolate and then in the heat of the moment, he stabbed him in the heart like Jimmy stabbed him in the back. </Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
+              <Button className={classes.button} onClick={endGame}>YES!</Button>
             </div>
 
 
