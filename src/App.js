@@ -1,20 +1,23 @@
 import React from 'react';
-import './App.css';
 import Routes from './Routes.js'
 import { BrowserRouter as Router } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
+import { styleFinder } from './StyleSheets/StyleFinderApp';
 
-
-function App() {
+const styles = styleFinder();
+function App(props) {
+  const { classes } = props;
+  console.log(styleFinder())
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={classes.AppBackground}>
+      <div className={classes.MainApp}>
         <Router>
           <Routes />
         </Router>
+      </div>
 
-      </header>
     </div>
   );
 }
 
-export default App;
+export default withStyles(styles)(App);

@@ -2,41 +2,25 @@ export const styleFinder = () => {
   let styles;
   if (window.matchMedia("(max-width: 600px)").matches) {
     styles = {
-      pageContainer:
-      {
+      App: {
         display: 'flex',
-        flexDirection: "column"
-      },
-      button:
-      {
-        backgroundColor: 'pink',
-        width: "50%",
-        marginTop: '2vh'
-      },
-      buttonGroup:
-      {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        width: '100vw',
+        height: '100vh',
+        backgroundColor: 'gray'
       }
     }
   } else {
     styles = {
-      pageContainer:
-      {
-        display: 'flex',
-        flexDirection: "column"
+      AppBackground: {
+        backgroundColor: '#25274D'
       },
-      button:
+      MainApp:
       {
-        backgroundColor: 'white',
-        width: "50%",
-        marginTop: '2vh'
-      },
-      buttonGroup:
-      {
+        width: '100vw',
+        minHeight: '100vh',
         display: 'flex',
-        flexDirection: 'column',
+        justifyContent: 'center',
         alignItems: 'center'
       }
     }
