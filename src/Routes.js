@@ -11,7 +11,7 @@ import Page3 from './Pages/Page3';
 import Page5 from './Pages/Page5'
 import Page8 from './Pages/Page8'
 import Page6 from './Pages/Page6'
-
+import Page9 from './Pages/Page9'
 
 const styles = {}
 
@@ -33,9 +33,10 @@ class Routes extends Component {
           <Route exact path="/4" component={Page4} />
           <Route exact path="/5" component={Page5} />
           <Route exact path="/6" component={Page6} />
-
           <Route exact path="/7" component={Page8} />
           <Route exact path="/8" component={Page8} />
+          <Route exact path="/9" component={Page9} />
+
         </Switch>
       </div>
     )

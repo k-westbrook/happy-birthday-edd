@@ -56,7 +56,7 @@ export const visitedPages = [
   {
     index: 11,
     visited: false,
-    button: "Interrogtae that random person"
+    button: "Interrogtae a random person"
   }
 
 ]
