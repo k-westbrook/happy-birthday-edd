@@ -65,6 +65,7 @@ const Page9 = (props) => {
     if (value === 12) {
       props.handleVisit(12);
     }
+    props.handleVisit(value);
     props.history.push(`/${value}`)
   }
 
@@ -85,18 +86,17 @@ const Page9 = (props) => {
               </div>
               :
               <div className={classes.buttonGroup}>
-                {props.gameState.visitedPages.slice(13, 16).map((button) => {
-
-                  if (!button.visited) {
-                    return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                    )
-                  } else {
-                    return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
-                    )
-
-                  }
-                })
+                {(!props.gameState.visitedPages[13].visited) &&
+                  < Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
                 }
+                {(!props.gameState.visitedPages[14].visited) &&
+                  < Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+                }
+                {(!props.gameState.visitedPages[25].visited) &&
+                  < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
+                }
+
+
               </div>
 
             }
