@@ -9,7 +9,7 @@ import Page10 from './Pages/Page10'
 import Page11 from './Pages/Page11'
 import Page12 from './Pages/Page12'
 import Page13 from './Pages/Page13'
-
+import Page14 from './Pages/Page14'
 import Page16 from './Pages/Page16'
 import Page17 from './Pages/Page17'
 import Page18 from './Pages/Page18'
@@ -21,6 +21,7 @@ import Page22 from './Pages/Page22'
 import Page23 from './Pages/Page23'
 import Page24 from './Pages/Page24'
 import Page26 from './Pages/Page26'
+import Page28 from './Pages/Page28'
 import Page4 from './Pages/Page4'
 import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles';
@@ -59,6 +60,8 @@ class Routes extends Component {
           <Route exact path="/11" component={Page11} />
           <Route exact path="/12" component={Page12} />
           <Route exact path="/13" component={Page13} />
+          <Route exact path="/14" component={Page14} />
+
           <Route exact path="/15" component={Page15} />
 
           <Route exact path="/16" component={Page16} />
@@ -73,7 +76,7 @@ class Routes extends Component {
           <Route exact path="/23" component={Page23} />
           <Route exact path="/24" component={Page24} />
           <Route exact path="/26" component={Page26} />
-
+          <Route exact path="/28" component={Page28} />
         </Switch>
       </div>
     )

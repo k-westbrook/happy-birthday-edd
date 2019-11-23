@@ -146,4 +146,10 @@ export const visitedPages = [
     visited: false,
     button: "Starbucks Roastery Time"
   }
+  ,
+  {
+    index: 28,
+    visited: false,
+    button: "Confront Rose"
+  }
 ]
