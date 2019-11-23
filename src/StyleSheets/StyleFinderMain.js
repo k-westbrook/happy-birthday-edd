@@ -5,19 +5,19 @@ export const styleFinder = () => {
       pageContainer:
       {
         display: 'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        padding: '2vh'
       },
-      button:
+      titleContainer:
       {
-        backgroundColor: 'pink',
-        width: "50%",
-        marginTop: '2vh'
+        textAlign: 'center',
+        marginBottom: '5vh',
+        color: 'white'
       },
-      buttonGroup:
-      {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
+      Paper: {
+        marginLeft: '2vw',
+        marginRight: '1vw'
+
       }
     }
   } else {
