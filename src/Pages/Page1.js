@@ -1,57 +1,9 @@
 import React from 'react';
-
+import { styleFinder } from './StyleFinderGeneric';
 import { withStyles } from '@material-ui/core/styles';
-import { Typography, InputLabel, Input, Button } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 import { visitPage } from '../Store/Game'
 import { connect } from 'react-redux'
-
-
-
-
-const styles =
-{
-  pageContainer:
-  {
-    display: 'flex',
-    flexDirection: "column"
-  },
-  nameForm:
-  {
-
-    width: '30vw'
-  },
-  formContainer:
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: "5vh"
-  },
-  input:
-  {
-    width: '100%',
-    fontSize: '100%',
-    padding: '1vh',
-    backgroundColor: 'white',
-  },
-  inputLabel:
-  {
-    fontSize: '100%',
-    color: 'light-grey',
-    backgroundColor: 'white',
-  },
-  button:
-  {
-    backgroundColor: 'white',
-    width: "50%",
-    marginTop: '2vh'
-  },
-  buttonGroup:
-  {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  }
-}
 
 
 
@@ -101,4 +53,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page1));
+export default withStyles(styleFinder())(connect(mapState, mapDispatch)(Page1));
