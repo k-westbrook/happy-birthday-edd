@@ -70,7 +70,7 @@ const Page2 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Starbucks</Typography>
-            <Typography variant='body1'> Jimmy isn't here. {props.gameState.userName}, do you want a latte? Nah Nah you're right. We are looking for this dude...I think there are too many people here. At night, Jimmy likes to be alone. </Typography>
+            <Typography variant='body1'> Jimmy isn't here. {props.gameState.userName}, do you want a latte? Nah Nah you're right. We are looking for this dude...I think there are too many people here. At night, Jimmy likes to be alone. He sees so many people at work. Lots of tourists. </Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(2, 5).map((button) => {
 

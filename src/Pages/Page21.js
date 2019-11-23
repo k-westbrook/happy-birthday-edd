@@ -72,7 +72,7 @@ const Page15 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Beer Conversations</Typography>
-            <Typography variant='body1'> You accept the beer and start laughing with the two of them. Edd makes some good jokes, not surprising. Ricardo, a friend from Edd's barista school comes over. He asks how Edd and Jimmy are doing on their plan to open a coffee shop and destroy the competition (where the currently work). Obviously, Ricardo doesn't know about the murder. Pabi doesn't know Ricardo but he does know that Jimmy stole his girlfriend Rose.  </Typography>
+            <Typography variant='body1'> You accept the beer and start laughing with the two of them. Edd makes some good jokes, not surprising. Ricardo, a friend from Edd's barista school comes over. He says that Jimmy works at his local coffee shop in Phinney Ridge. He is the big boss and has taken his knowledge of roasting to a next level. He says that he is suspicious of Jimmy but says "I don't have a problem with him except he is techically with an old friend of mine name Rose."  Pabi doesn't know Ricardo but he does know that Jimmy stole his girlfriend Rose.  </Typography>
 
             <div className={classes.buttonGroup}>
               <Button className={classes.button} onClick={(value) => { handleGame(24) }}>Accuse Ricardo of Murder</Button>

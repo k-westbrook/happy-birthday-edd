@@ -72,7 +72,7 @@ const Page25 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Fremont Brewery</Typography>
-            <Typography variant='body1'> Ya again. There's no lead at this place. But wait, is that Edd's best friend, Paula, is about to leave? Should we flag her down? Or maybe just leave? But that guy over there is Iam Stabber, he was convicted of serial killing but got off on a technicality. Look he just over us this drink... so many decisions </Typography>
+            <Typography variant='body1'> Ya again. There's no lead at this place. But that guy over there is Iam Stabber, he was convicted of serial killing but got off on a technicality. His victims were stabbed. Look he just over us this drink... so many decisions </Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[13].visited) &&

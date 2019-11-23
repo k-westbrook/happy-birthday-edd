@@ -75,7 +75,7 @@ const Page4 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Abandoned Alley</Typography>
-            <Typography variant='body1'> IT'S JIMMY! AND HE IS DEAD!</Typography>
+            <Typography variant='body1'> IT'S JIMMY! AND HE IS DEAD! OMG! There is blood everywhere.I think there is a knife in his front??!</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(5, 8).map((button) => {
 
