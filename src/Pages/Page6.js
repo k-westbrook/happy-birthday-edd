@@ -59,6 +59,7 @@ const styles =
 const Page6 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
+    props.handleVisit(value);
 
     props.history.push(`/${value}`)
   }
