@@ -56,7 +56,7 @@ const styles =
 
 
 
-const Page5 = (props) => {
+const Page6 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
 
@@ -71,7 +71,7 @@ const Page5 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Abandoned Alley</Typography>
-            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm. Rustle, Rustle, there is a lookie loo but we could go look for others</Typography>
+            <Typography variant='body1'> Ok you call 911, {props.gameState.userName}. ***2 hours later*** Head Detective Brooks "Orca" Diamond just told me that it looks like he lost a lot of blood from getting stabbed in the chest. Looks like 5 hours ago. Hey {props.gameState.userName}, looks there is some guy in a hat and sunglasses looking at weird. Who wears sunglasses to a crime scene at night?</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(9, 12).map((button) => {
 
@@ -113,4 +113,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page5));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page6));

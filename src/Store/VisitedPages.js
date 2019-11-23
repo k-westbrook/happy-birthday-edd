@@ -41,8 +41,22 @@ export const visitedPages = [
   },
   {
     index: 8,
+    visited: false
+  },
+  {
+    index: 9,
     visited: false,
-    button: "Faint"
+    button: "Investigate that dude"
+  },
+  {
+    index: 10,
+    visited: false,
+    button: "Look for evidence!"
+  },
+  {
+    index: 11,
+    visited: false,
+    button: "Interrogtae that random person"
   }
 
 ]
