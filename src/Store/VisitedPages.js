@@ -121,6 +121,15 @@ export const visitedPages = [
     visited: false,
     button: "Ask Edd some questions."
   },
-
+  {
+    index: 23,
+    visited: false,
+    button: "Ask Edd where he was and where the chocolate came from"
+  },
+  {
+    index: 24,
+    visited: false,
+    button: "Start accusing people of murder"
+  },
 
 ]
