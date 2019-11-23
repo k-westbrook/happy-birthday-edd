@@ -66,7 +66,7 @@ export const visitedPages = [
   {
     index: 13,
     visited: false,
-    button: "Go to rival coffee shop"
+    button: "Go to that local coffee shop"
   },
   {
     index: 14,
@@ -131,5 +131,9 @@ export const visitedPages = [
     visited: false,
     button: "Start accusing people of murder"
   },
-
+  {
+    index: 25,
+    visited: false,
+    button: "Head to Fremont Brewery"
+  }
 ]
