@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 import { setUser } from './Store/Game'

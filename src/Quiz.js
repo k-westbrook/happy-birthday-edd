@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux'

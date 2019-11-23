@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Link } from 'react-router-dom'
 import { styleFinder } from './StyleSheets/StyleFinderMain';
 import { withStyles } from '@material-ui/core/styles';
