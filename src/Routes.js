@@ -8,6 +8,8 @@ import Page1 from './Pages/Page1'
 import Page10 from './Pages/Page10'
 import Page11 from './Pages/Page11'
 import Page12 from './Pages/Page12'
+import Page13 from './Pages/Page13'
+
 import Page16 from './Pages/Page16'
 import Page17 from './Pages/Page17'
 import Page18 from './Pages/Page18'
@@ -56,7 +58,7 @@ class Routes extends Component {
           <Route exact path="/10" component={Page10} />
           <Route exact path="/11" component={Page11} />
           <Route exact path="/12" component={Page12} />
-
+          <Route exact path="/13" component={Page13} />
           <Route exact path="/15" component={Page15} />
 
           <Route exact path="/16" component={Page16} />

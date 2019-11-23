@@ -135,5 +135,15 @@ export const visitedPages = [
     index: 25,
     visited: false,
     button: "Head to Fremont Brewery"
+  },
+  {
+    index: 26,
+    visited: false,
+    button: "Ask the barista working"
+  },
+  {
+    index: 27,
+    visited: false,
+    button: "Starbucks Roastery Time"
   }
 ]

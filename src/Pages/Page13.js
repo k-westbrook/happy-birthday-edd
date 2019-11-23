@@ -72,18 +72,19 @@ const Page13 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>Local Coffee Shop</Typography>
-            <Typography variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It is a employee of the month poster! They tied this month! It looks like Edd usually gets it from the previous months. I didn't even know Edd worked here!</Typography>
-            {(!props.gameState.visitedPages[9].visited) ?
+            <Typography variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It is a employee of the month poster! They tied this month! It looks like Edd usually gets it from the previous months. I didn't even know Edd worked here! I knew Jimmy was in our friend group but I thought they worked at the Starbucks Roastery! HMMMMM</Typography>
+            {(!props.gameState.visitedPages[25].visited) ?
               <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(9) }}>{props.gameState.visitedPages[9].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(12) }}>{props.gameState.visitedPages[12].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(26) }}>{props.gameState.visitedPages[26].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
 
               </div>
               :
               <div className={classes.buttonGroup}>
-                <Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
                 <Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(26) }}>{props.gameState.visitedPages[26].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
 
               </div>
             }
