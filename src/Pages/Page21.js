@@ -56,7 +56,7 @@ const styles =
 
 
 
-const Page22 = (props) => {
+const Page15 = (props) => {
   const { classes } = props;
   const handleGame = (value) => {
 
@@ -71,13 +71,13 @@ const Page22 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Let's push him</Typography>
-            <Typography variant='body1'> Hell no. I'm not taking beer or pills. The only thing I'll take is you to police because you're guilty of having a birthday and being awesome. You laugh it off but start suspecting that Edd is guilty of something. Edd tells me that he just wants us to have fun. I believe him. Pabi is not sure but Pabi also licks his butt and takes instagram selfies at crime scenes.  </Typography>
+            <Typography variant='h3'>Beer Conversations</Typography>
+            <Typography variant='body1'> You accept the beer and start laughing with the two of them. Edd makes some good jokes, not surprising. Ricardo, a friend from Edd's barista school comes over. He asks how Edd and Jimmy are doing on their plan to open a coffee shop and destroy the competition (where the currently work). Obviously, Ricardo doesn't know about the murder. Pabi doesn't know Ricardo but he does know that Jimmy stole his girlfriend Rose.  </Typography>
 
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={(value) => { handleGame(19) }}>{props.gameState.visitedPages[19].button}</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(23) }}>{props.gameState.visitedPages[23].button}</Button>
-              <Button className={classes.button} onClick={(value) => { handleGame(24) }}>Accuse Edd of Murder</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(24) }}>Accuse Ricardo of Murder</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(19) }}>Leave because everyone is cool</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(22) }}>Keep on Edd</Button>
             </div>
           </div>
 
@@ -105,4 +105,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page22));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page15));

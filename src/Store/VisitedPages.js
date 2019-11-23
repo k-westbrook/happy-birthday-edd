@@ -129,7 +129,7 @@ export const visitedPages = [
   {
     index: 24,
     visited: false,
-    button: "Start accusing people of murder- AKA EDD"
+    button: "Start accusing people of murder"
   },
 
 ]
