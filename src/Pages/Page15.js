@@ -2,7 +2,7 @@ import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
-import { endGameBad } from '../Store/Game'
+import { visitPage } from '../Store/Game'
 import { connect } from 'react-redux'
 
 
@@ -56,11 +56,12 @@ const styles =
 
 
 
-const Page5 = (props) => {
+const Page15 = (props) => {
   const { classes } = props;
-  const endGame = () => {
-    props.endGame();
-    props.history.push(`/start`)
+  const handleGame = (value) => {
+
+    props.handleVisit(value);
+    props.history.push(`/${value}`)
   }
 
 
@@ -70,14 +71,16 @@ const Page5 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>THE END</Typography>
-            <Typography variant='body1'> It is cold and dark. You never see it coming. The murderer murdered you.</Typography>
+            <Typography variant='h3'>Edd</Typography>
+            <Typography variant='body1'> We both refuse the shot and start getting mad. Like someone died. Someone he knew and his mood is erratic. What's up with him? Paula, a mutual friend comes over and tries to start talking to you. She is crying because Jimmy was her good friend. She says they had coffee recently one morning at a favorite cafe. Hmmm. What do you think? Pabi wants to keep on Edd. Paula offers us a beer. Edd offers us a pill. Hell no I'm not taking that pill but you can do whatever. </Typography>
+
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(20) }}>{props.gameState.visitedPages[20].button}</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(21) }}>{props.gameState.visitedPages[21].button}</Button>
+              <Button className={classes.button} onClick={(value) => { handleGame(22) }}>{props.gameState.visitedPages[22].button}</Button>
             </div>
-
-
           </div>
+
           :
           <div>
             <Typography variant='h3'>Page Loading...</Typography>
@@ -91,7 +94,7 @@ const Page5 = (props) => {
 
 const mapDispatch = dispatch => {
   return {
-    endGame: () => dispatch(endGameBad())
+    handleVisit: (pageNumber) => dispatch(visitPage(pageNumber))
   }
 }
 
@@ -102,4 +105,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page5));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page15));

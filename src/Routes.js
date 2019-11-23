@@ -8,6 +8,9 @@ import Page11 from './Pages/Page11'
 import Page12 from './Pages/Page12'
 import Page16 from './Pages/Page16'
 import Page17 from './Pages/Page17'
+import Page18 from './Pages/Page18'
+import Page15 from './Pages/Page15'
+
 import Page2 from './Pages/Page2'
 import Page4 from './Pages/Page4'
 import { connect } from 'react-redux'
@@ -45,9 +48,14 @@ class Routes extends Component {
           <Route exact path="/11" component={Page11} />
           <Route exact path="/12" component={Page12} />
 
+          <Route exact path="/15" component={Page15} />
 
           <Route exact path="/16" component={Page16} />
+          <Route exact path="/17" component={Page17} />
+          <Route exact path="/18" component={Page18} />
 
+          <Route exact path="/19" component={Page8} />
+          <Route exact path="/20" component={Page18} />
 
 
         </Switch>

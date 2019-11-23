@@ -76,7 +76,7 @@ const Page11 = (props) => {
             {(props.gameState.visitedPages[5].visited) ?
               <div className={classes.buttonGroup}>
                 <Button className={classes.button} onClick={(value) => { handleGame(5) }}>Head Back to Crime Scene</Button>
-                <Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
+                <Button className={classes.button} onClick={(value) => { handleGame(16) }}>{props.gameState.visitedPages[16].button}</Button>
 
               </div>
               :

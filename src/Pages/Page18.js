@@ -56,7 +56,7 @@ const styles =
 
 
 
-const Page5 = (props) => {
+const Page18 = (props) => {
   const { classes } = props;
   const endGame = () => {
     props.endGame();
@@ -71,7 +71,7 @@ const Page5 = (props) => {
         props.gameState.userName ?
           <div>
             <Typography variant='h3'>THE END</Typography>
-            <Typography variant='body1'> It is cold and dark. You never see it coming. The murderer murdered you.</Typography>
+            <Typography variant='body1'> You wake up in a hospital bed and find out that you have been in a coma for a year. The killer was never caught. I'm there to tell you that I gave up after your sickness. I felt like we were too close but yet so far away.</Typography>
             <div className={classes.buttonGroup}>
               <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>
@@ -102,4 +102,4 @@ const mapState = state => {
   }
 }
 
-export default withStyles(styles)(connect(mapState, mapDispatch)(Page5));
+export default withStyles(styles)(connect(mapState, mapDispatch)(Page18));

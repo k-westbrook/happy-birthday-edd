@@ -89,5 +89,38 @@ export const visitedPages = [
     visited: false,
     button: "Go to Party and Discuss Case"
   }
+  ,
+
+  {
+    index: 18,
+    visited: false,
+    button: "Take the Shot"
+  },
+
+  {
+    index: 19,
+    visited: false,
+    button: "Leave the Party"
+  },
+
+  {
+    index: 20,
+    visited: false,
+    button: "Take the Pill"
+  }
+  ,
+
+  {
+    index: 21,
+    visited: false,
+    button: "Go have a beer"
+  },
+
+  {
+    index: 22,
+    visited: false,
+    button: "Ask Edd some questions."
+  },
+
 
 ]
