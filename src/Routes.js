@@ -25,6 +25,8 @@ import Page26 from './Pages/Page26'
 import Page27 from './Pages/Page27'
 
 import Page28 from './Pages/Page28'
+import Page29 from './Pages/Page29'
+
 import Page4 from './Pages/Page4'
 import { connect } from 'react-redux'
 import { withStyles } from '@material-ui/core/styles';
@@ -83,6 +85,8 @@ class Routes extends Component {
           <Route exact path="/27" component={Page27} />
 
           <Route exact path="/28" component={Page28} />
+          <Route exact path="/29" component={Page29} />
+
         </Switch>
       </div>
     )
