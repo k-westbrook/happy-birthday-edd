@@ -50,6 +50,10 @@ export const styleFinder = () => {
       paperContainer:
       {
         height: '30vh'
+      },
+      buttonGroup:
+      {
+        display: 'flex'
       }
     }
   } else {

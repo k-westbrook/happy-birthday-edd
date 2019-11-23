@@ -1,7 +1,6 @@
 import React from 'react';
-
 import { withStyles } from '@material-ui/core/styles';
-import { Typography, InputLabel, Input, Button } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 import { endGameBad } from './Store/Game'
 import { connect } from 'react-redux'
 

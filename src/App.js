@@ -7,7 +7,6 @@ import { styleFinder } from './StyleSheets/StyleFinderApp';
 const styles = styleFinder();
 function App(props) {
   const { classes } = props;
-  console.log(styleFinder())
   return (
     <div className={classes.AppBackground}>
       <div className={classes.MainApp}>

@@ -2,11 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { styleFinder } from './StyleSheets/StyleFinderMain';
 import { withStyles } from '@material-ui/core/styles';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Button } from '@material-ui/core';
+import { connect } from 'react-redux'
 
 
 function HomePage(props) {
   const { classes } = props;
+  const handleYes = () => {
+    props.history.push('/quiz')
+  }
+
   return (
     <div className={classes.pageContainer}>
       <div className={classes.titleContainer}>
@@ -19,13 +24,13 @@ function HomePage(props) {
             <div className={classes.textContainer}>
               <Typography variant='body1' className={classes.text}>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.</Typography>
             </div>
-            <Link to='/quiz'>
-              <button>YES</button>
-            </Link>
-            <a href="https://m.wikihow.com/Be-a-Good-Friend">
-              <button>NO</button>
-            </a>
+            <div className={classes.buttonGroup}>
+              <Button onClick={handleYes}>YES</Button>
+
+              <Button href='https://m.wikihow.com/Be-a-Good-Friend'>NO</Button>
+            </div>
           </fieldset>
+
         </Paper>
       </div>
 
@@ -33,4 +38,12 @@ function HomePage(props) {
   );
 }
 
-export default withStyles(styleFinder())(HomePage);
+
+const mapState = state => {
+  return {
+    gameState: state.game
+
+  }
+}
+
+export default withStyles(styleFinder())(connect(mapState)(HomePage));
