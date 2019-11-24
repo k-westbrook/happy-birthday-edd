@@ -21,7 +21,7 @@ function HomePage(props) {
           <fieldset className={classes.FieldSet}>
             <legend className={classes.text}><b>Welcome to Edd's Party!</b></legend>
             <div className={classes.textContainer}>
-              <Typography variant='body1' className={classes.text}>I hope you have an great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.Will you?</Typography>
+              <Typography variant='body1' className={classes.text}>I hope you have a great Happy Birthday! <br />Wait this is not just a birthday card...<br />I need your help.Will you?</Typography>
             </div>
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={handleYes}>YES</Button>

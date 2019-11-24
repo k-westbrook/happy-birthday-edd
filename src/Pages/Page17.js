@@ -28,7 +28,7 @@ const Page17 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Edd's Birthday Party</Typography>
-            <Typography className={classes.storyContent} variant='body1'> We return to Edd's Bday. Wow Edd looks happy and he is eating chocolate. He surprised Elsa with a rose. What a standup guy. We discuss the case with everyone but since we didn't really do anything else besides chase some random person we know nothing. This was a pretty sad case. We talk about all the evidence and Edd suddenly gets visibly bothered. Hmmmm. He returns with a bottle of vodka. It's a plastic bottle and offers you a shot. </Typography>
+            <Typography className={classes.storyContent} variant='body1'> We return to Edd's Bday. Wow Edd looks happy and he is eating chocolate. He surprised Elsa with a rose. What a standup guy. We discuss the case with everyone but since we didn't really do anything else besides chase some random person we know nothing. This was a pretty sad case. We talk about all the evidence and Edd suddenly gets visibly bothered. Hmmmm. He returns with a plastic bottle of vodka and offers you a shot. </Typography>
 
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(18) }}>{props.gameState.visitedPages[18].button}</Button>

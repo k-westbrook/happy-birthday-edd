@@ -27,8 +27,8 @@ const Page22 = (props) => {
       {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
-            <Typography className={classes.pageTitle} variant='h3'>Let's push him</Typography>
-            <Typography className={classes.storyContent} variant='body1'> Hell no. I'm not taking beer or pills. The only thing I'll take is you to police because you're guilty of having a birthday and being awesome. You laugh it off but start suspecting that Edd is guilty of something. Edd tells me that he just wants us to have fun. I believe him. Pabi is not sure but Pabi also licks his butt and takes instagram selfies at crime scenes.  </Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Let's Push Him</Typography>
+            <Typography className={classes.storyContent} variant='body1'> Hell no. I'm not taking beer or pills. The only thing I'll take is you to the police because you're guilty of having a birthday and being awesome. You laugh it off but start suspecting that Edd is guilty of something. Edd says that he just wants us to have fun. I believe him, but Pabi is not so sure. Then again, Pabi also licks his butt and takes instagram selfies at crime scenes... </Typography>
 
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(19) }}>{props.gameState.visitedPages[19].button}</Button>

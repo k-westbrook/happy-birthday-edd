@@ -29,7 +29,7 @@ const Page4 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Abandoned Alley</Typography>
-            <Typography className={classes.storyContent} variant='body1'> IT'S JIMMY! AND HE IS DEAD! OMG! There is blood everywhere.I think there is a knife in his front??!</Typography>
+            <Typography className={classes.storyContent} variant='body1'> IT'S JIMMY! AND HE IS DEAD! OMG! There is blood everywhere. I think there is a knife in his front??!</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(5, 8).map((button) => {
 

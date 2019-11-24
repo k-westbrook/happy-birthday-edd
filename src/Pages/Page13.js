@@ -24,7 +24,7 @@ const Page13 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Local Coffee Shop</Typography>
-            <Typography className={classes.storyContent} variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It is a employee of the month poster! They tied this month! It looks like Edd usually gets it from the previous months. I didn't even know Edd worked here! I knew Jimmy was in our friend group but I thought they worked at the Starbucks Roastery! HMMMMM</Typography>
+            <Typography className={classes.storyContent} variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It's an employee of the month poster! They tied this month! But, it looks like Edd usually gets it from the previous months. I didn't even know Edd worked here! I knew Jimmy was in our friend group but I thought they worked at the Starbucks Roastery! HMMMMM</Typography>
             {<div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[25].visited) &&
                 < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>

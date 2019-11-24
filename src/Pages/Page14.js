@@ -24,8 +24,8 @@ const Page14 = (props) => {
       {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
-            <Typography className={classes.pageTitle} variant='h3'>Dick's Burger</Typography>
-            <Typography className={classes.storyContent} variant='body1'>Ok No one is here. Pabi will get probably get Fries and a Coke. But wait, is that the same bushel of roses we saw at the crime scene? I think that's Rose, isn't she dating Jimmy? Why does she have those roses? HMMMMM  </Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Dick's Burgers</Typography>
+            <Typography className={classes.storyContent} variant='body1'>Ok No one is here. Pabi will get probably get Fries and a Coke. But wait, is that the same bouquet of roses we saw at the crime scene? I think that's Rose, isn't she dating Jimmy? Why does she have those roses? HMMMMM  </Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[25].visited) &&

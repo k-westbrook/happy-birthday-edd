@@ -29,10 +29,10 @@ const Page15 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Beer Conversations</Typography>
-            <Typography className={classes.storyContent} variant='body1'> You accept the beer and start laughing with the two of them. Edd makes some good jokes, not surprising. Ricardo, a friend from Edd's barista school comes over. He says that Jimmy works at his local coffee shop in Phinney Ridge. He is the big boss and has taken his knowledge of roasting to a next level. He says that he is suspicious of Jimmy but says "I don't have a problem with him except he is techically with an old friend of mine name Rose."  Pabi doesn't know Ricardo but he does know that Jimmy stole his girlfriend Rose.  </Typography>
+            <Typography className={classes.storyContent} variant='body1'> You accept the beer and start laughing with the two of them. Edd makes some good jokes, not surprising. Ricardo, a friend from Edd's barista school, comes over. He says that Jimmy works at his local coffee shop in Phinney Ridge. He is the big boss and has taken his knowledge of roasting to a next level. Ricardo says that he is suspicious of Jimmy but says "I don't have a problem with him except he is techically with an old friend of mine name Rose."  Pabi doesn't know Ricardo, but he does know that Jimmy stole his girlfriend Rose.  </Typography>
 
             <div className={classes.buttonGroup}>
-              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(24) }}>Accuse Ricardo of Murder</Button>
+              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(24) }}>Accuse Ricardo of murder</Button>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(19) }}>Leave because everyone is cool</Button>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(22) }}>Keep on Edd</Button>
             </div>

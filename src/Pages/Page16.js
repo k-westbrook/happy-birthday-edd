@@ -29,7 +29,7 @@ const Page16 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Interrogate the Youth</Typography>
-            <Typography className={classes.storyContent} variant='body1'> The youth tells us that they are a straight A kid and like to go on brisk PNW walks at night. I guess they are warm blooded because ice cream in November? They said they saw two men arguing?! They say the guy who is dead screamed some name Zed or Ted maybe? But he was eating chocolate. Hmmm So guess we are narrowing it down. </Typography>
+            <Typography className={classes.storyContent} variant='body1'> The youth tells us that they are a straight A kid and like to go on brisk PNW walks at night. I guess they are warm blooded because... ice cream...in November? They said they saw two men arguing?! They say the guy who is dead screamed some name Zed or Ted maybe? But he was eating chocolate. Hmmm I guess we are narrowing it down. </Typography>
 
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>

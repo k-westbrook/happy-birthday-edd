@@ -27,7 +27,7 @@ const Page25 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Fremont Brewery</Typography>
-            <Typography className={classes.storyContent} variant='body1'> Ya again. There's no lead at this place. But that guy over there is Iam Stabber, he was convicted of serial killing but got off on a technicality. His victims were stabbed. Look he just over us this drink... so many decisions </Typography>
+            <Typography className={classes.storyContent} variant='body1'> Ya again. There's no lead at this place. But that guy over there is Iam Stabber, he was almost convicted of being a serial killer, but got off on a technicality. His victims were stabbed. He just offered us a drink... so many decisions </Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[13].visited) &&

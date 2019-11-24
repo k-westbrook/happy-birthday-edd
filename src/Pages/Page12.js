@@ -22,7 +22,7 @@ const Page12 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>THE END</Typography>
-            <Typography className={classes.storyContent} variant='body1'> You can go back to the party {props.gameState.userName}.I'm doing real work and need to find the truth. ***you head back*** Katie and Pabi texted everyone that you bailed on the investigation and now no one wants to be your friend. Especially Edd. He gives you the worst look EVER.</Typography>
+            <Typography className={classes.storyContent} variant='body1'> You can go back to the party {props.gameState.userName}. I'm doing real work and need to find the truth. ***you head back*** Katie and Pabi texted everyone that you bailed on the investigation and now no one wants to be your friend. Especially Edd. He gives you the worst look EVER.</Typography>
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>

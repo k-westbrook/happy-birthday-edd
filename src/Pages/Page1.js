@@ -22,7 +22,7 @@ const Page1 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3' >Let's Go!</Typography>
-            <Typography className={classes.storyContent} variant='body1'>Hello {props.gameState.userName}, I'm glad you are on board to finding Jimmy. So Pabi found out that Jimmy likes to hang around three places: Starbucks, an abandoned alley, and an isolated warehouse in Ballard. Just to clarify the Starbuck is the local one in Pike's Place, not the one that they work at...where should we go first?  </Typography>
+            <Typography className={classes.storyContent} variant='body1'>Hello {props.gameState.userName}, I'm glad you are on board to finding Jimmy. So Pabi found out that Jimmy likes to hang around three places: the first Starbucks (in the market), an abandoned alley, and an isolated warehouse in Ballard. Where should we go first?  </Typography>
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(2) }}>Starbucks</Button>
               <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(3) }}>Abandoned Alley</Button>
