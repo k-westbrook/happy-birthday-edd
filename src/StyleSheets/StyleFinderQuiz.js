@@ -44,13 +44,39 @@ export const styleFinder = () => {
       pageContainer:
       {
         display: 'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        padding: '2vh',
+        alignItems: 'center',
+        width: '100vw',
+        minHeight: '100vh',
+        background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 58%, rgba(253,64,39,1) 82%, rgba(252,176,69,1) 100%)',
+        paddingTop: '8vh'
+      },
+      radioGroup:
+      {
+        display: 'flex',
+        flexDirection: 'row',
+        minHeight: '4vh'
+      },
+      Paper: {
+        marginLeft: '2vw',
+        marginRight: '2vw',
+        minHeight: '25vh',
+        padding: '3vh',
+        minWidth: '40vw'
+      },
+
+      buttonGroup:
+      {
+        marginTop: '2vh',
+        marginBottom: '2vh',
+        display: 'flex',
+        justifyContent: 'center'
+
       },
       button:
       {
-        backgroundColor: 'white',
-        width: "50%",
-        marginTop: '2vh'
+        fontSize: '3vh'
       }
     }
   }
