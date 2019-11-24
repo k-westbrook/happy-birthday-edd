@@ -132,7 +132,8 @@ export const styleFinder = () => {
       pageContainer:
       {
         display: 'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        padding: '5vw'
       },
       button:
       {
