@@ -86,6 +86,43 @@ export const styleFinder = () => {
       button: {
         width: '80%',
         marginBottom: '3vh'
+      },
+      endPageContainer: {
+        background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 58%, rgba(253,64,39,1) 82%, rgba(252,176,69,1) 100%)',
+        display: 'flex',
+        flexDirection: "column",
+        width: '100vw',
+        minHeight: '100vh'
+
+      },
+      endContent:
+      {
+        marginTop: '5vh',
+        padding: '3vh'
+      },
+      endTitle:
+      {
+        color: 'white',
+        marginBottom: '2vh',
+        borderStyle: 'solid',
+        padding: '4vh',
+        textAlign: 'center'
+      },
+      endText:
+      {
+        fontSize: '3vh',
+        marginBottom: '3vh'
+      },
+      paperEnd:
+      {
+        padding: '2vh'
+      },
+      endButton:
+      {
+        width: '80%',
+        fontSize: '2.5vh',
+        marginBottom: '3vh'
+
       }
     }
 
