@@ -207,7 +207,7 @@ export const styleFinder = () => {
       },
       storyContent: {
         color: 'white',
-        fontSize: '2.5vh',
+        fontSize: '3.5vh',
         marginBottom: '6vh'
       },
       pageTitle:
@@ -219,24 +219,29 @@ export const styleFinder = () => {
       storyContainer:
       {
         marginTop: '5vh',
-        padding: '2vh'
+        padding: '2vh',
+        width: '70vw',
+        marginLeft: '3vw'
       },
       button: {
         width: '80%',
-        marginBottom: '3vh'
+        marginBottom: '3vh',
+        fontSize: '3vh'
       },
       endPageContainer: {
         background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 58%, rgba(253,64,39,1) 82%, rgba(252,176,69,1) 100%)',
         display: 'flex',
         flexDirection: "column",
         width: '100vw',
-        minHeight: '100vh'
+        minHeight: '100vh',
+        alignItems: 'center'
 
       },
       endContent:
       {
         marginTop: '5vh',
-        padding: '3vh'
+        padding: '3vh',
+        width: '90vw'
       },
       endTitle:
       {
@@ -244,11 +249,12 @@ export const styleFinder = () => {
         marginBottom: '2vh',
         borderStyle: 'solid',
         padding: '4vh',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: '10vh'
       },
       endText:
       {
-        fontSize: '3vh',
+        fontSize: '4vh',
         marginBottom: '3vh'
       },
       paperEnd:
@@ -258,7 +264,7 @@ export const styleFinder = () => {
       endButton:
       {
         width: '80%',
-        fontSize: '2.5vh',
+        fontSize: '4vh',
         marginBottom: '3vh'
 
       },
