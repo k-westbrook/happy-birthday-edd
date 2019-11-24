@@ -1,3 +1,5 @@
+import main from '../images/main.jpeg'
+
 export const styleFinder = () => {
   let styles;
   if (window.matchMedia("(max-width: 400px)").matches) {
@@ -68,19 +70,64 @@ export const styleFinder = () => {
       pageContainer:
       {
         display: 'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        width: '100vw',
+        minHeight: '100vh',
+        background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 58%, rgba(253,64,39,1) 82%, rgba(252,176,69,1) 100%)'
+
       },
-      button:
+      titleContainer:
       {
-        backgroundColor: 'white',
-        width: "50%",
-        marginTop: '2vh'
+        textAlign: 'center',
+        marginBottom: '5vh',
+        marginTop: '2vh',
+        color: 'white',
+        height: '15vh',
+        borderStyle: 'solid',
+        padding: '2vh',
+        marginLeft: '3vw',
+        marginRight: '3vw'
+      },
+      header:
+      {
+        fontSize: '12vh'
+      },
+      FieldSet:
+      {
+        height: '90%'
+      },
+      Paper: {
+        marginLeft: '2vw',
+        marginRight: '2vw',
+        minHeight: '20vh',
+        padding: '2vh',
+        width: '50%'
+
+      },
+      textContainer:
+      {
+        height: '10vh'
+      },
+      text:
+      {
+        fontSize: '2.5vh',
+
+      },
+      paperContainer:
+      {
+        height: '40vh',
+        display: 'flex'
       },
       buttonGroup:
       {
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
+        justifyContent: 'space-evenly',
+        marginTop: '2vh',
+        marginBottom: '2vh'
+      },
+      button: {
+        width: '40%',
+        fontSize: '3vh'
       }
     }
   }

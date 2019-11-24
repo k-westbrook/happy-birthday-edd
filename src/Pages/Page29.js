@@ -26,7 +26,7 @@ const Page29 = (props) => {
         props.gameState.userName ?
           <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Iam Stabber</Typography>
-            <Typography className={classes.storyContent} variant='body1'> Pabi leaves because I don't know, this seems dangerous? But I guess let's have a chat with someone who killed over 100 people. Iam tells us all about how he is innocent. But all his victims were stabbed so maybe Iam is responsible. I just asked the bartender and he says Iam left for 2 hours around 5:30pm. Hmmm... Thanks for the drink man but I think we should keep looking</Typography>
+            <Typography className={classes.storyContent} variant='body1'> Pabi leaves because, I don't know, this seems dangerous? But I guess let's have a chat with someone who killed over 100 people. Iam tells us all about how he is innocent. But all his victims were stabbed so maybe Iam is responsible. I just asked the bartender and he says Iam left for 2 hours around 5:30pm. Hmmm... Thanks for the drink man but I think we should keep looking</Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[13].visited) &&
