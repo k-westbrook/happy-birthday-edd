@@ -79,7 +79,7 @@ export const styleFinder = () => {
       titleContainer:
       {
         textAlign: 'center',
-        marginBottom: '5vh',
+        marginBottom: '10vh',
         marginTop: '2vh',
         color: 'white',
         height: '15vh',
@@ -97,32 +97,29 @@ export const styleFinder = () => {
         height: '90%'
       },
       Paper: {
-        marginLeft: '2vw',
-        marginRight: '2vw',
-        minHeight: '20vh',
-        padding: '2vh',
-        width: '50%'
-
+        width: '50%',
+        padding: '2vw'
       },
       textContainer:
       {
-        height: '10vh'
+        height: '20vh'
       },
       text:
       {
-        fontSize: '2.5vh',
+        fontSize: '3.5vh',
 
       },
       paperContainer:
       {
-        height: '40vh',
-        display: 'flex'
+        height: '45vh',
+        display: 'flex',
+        justifyContent: 'center'
       },
       buttonGroup:
       {
         display: 'flex',
         justifyContent: 'space-evenly',
-        marginTop: '2vh',
+        marginTop: '1vh',
         marginBottom: '2vh'
       },
       button: {
