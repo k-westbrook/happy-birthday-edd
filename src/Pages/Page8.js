@@ -19,11 +19,11 @@ const Page8 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>THE END</Typography>
             <Typography className={classes.storyContent} variant='body1'> It is cold and dark. You never see it coming. The murderer murdered you.</Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
+              <Button variant='contained' className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>
 
 

@@ -22,12 +22,12 @@ const Page8 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>YOU SOLVE IT ALL</Typography>
             <Typography className={classes.storyContent} variant='body1'> Edd starts stuttering and can't come up with where he was or where the chocolate is from
             He then confesses that he killed that sob because he wrote him out of his coffee shop business plan. Edd couldn't take it and waited from him by eating chocolate and then in the heat of the moment, he stabbed him in the heart like Jimmy stabbed him in the back. </Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>YES!</Button>
+              <Button variant='contained' className={classes.button} onClick={endGame}>YES!</Button>
             </div>
 
 

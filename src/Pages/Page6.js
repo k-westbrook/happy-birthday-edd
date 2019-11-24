@@ -24,17 +24,17 @@ const Page6 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Abandoned Alley</Typography>
             <Typography className={classes.storyContent} variant='body1'> Ok you call 911, {props.gameState.userName}. ***2 hours later*** Head Detective Brooks "Orca" Diamond just told me that it looks like he lost a lot of blood from getting stabbed in the chest. Looks like 5 hours ago. Hey {props.gameState.userName}, looks there is some guy in a hat and sunglasses looking at weird. Who wears sunglasses to a crime scene at night?</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(9, 12).map((button) => {
 
                 if (!button.visited) {
-                  return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  return (<Button variant='contained' key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
                   )
                 } else {
-                  return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  return (<Button variant='contained' disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
                   )
 
                 }

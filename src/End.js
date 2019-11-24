@@ -77,7 +77,7 @@ const End = (props) => {
 
             }
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
+              <Button variant='contained' className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>
 
 

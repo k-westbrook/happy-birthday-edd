@@ -22,7 +22,7 @@ const Page13 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Local Coffee Shop</Typography>
             <Typography className={classes.storyContent} variant='body1'>Entering the local coffee shop, you notice a poster that has Edd and Jimmy's photos. It is a employee of the month poster! They tied this month! It looks like Edd usually gets it from the previous months. I didn't even know Edd worked here! I knew Jimmy was in our friend group but I thought they worked at the Starbucks Roastery! HMMMMM</Typography>
             {<div className={classes.buttonGroup}>
@@ -30,12 +30,12 @@ const Page13 = (props) => {
                 < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
               }
               {(!props.gameState.visitedPages[14].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
               }
               {(!props.gameState.visitedPages[14].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
               }
-              <Button className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
+              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
 
             </div>
             }

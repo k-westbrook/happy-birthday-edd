@@ -26,11 +26,11 @@ const Page18 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>THE END</Typography>
             <Typography className={classes.storyContent} variant='body1'> You wake up in a hospital bed and find out that you have been in a coma for a year. The killer was never caught. I'm there to tell you that I gave up after your sickness. I felt like we were too close but yet so far away.</Typography>
             <div className={classes.buttonGroup}>
-              <Button className={classes.button} onClick={endGame}>GO BACK TO START</Button>
+              <Button variant='contained' className={classes.button} onClick={endGame}>GO BACK TO START</Button>
             </div>
 
 

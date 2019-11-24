@@ -20,7 +20,7 @@ const Start = (props) => {
     <div className={classes.pageContainer}>
       <div className={classes.contentContainer}>
         <div>
-          <Typography className={classes.pageTitle} variant='h3' className={classes.title}>The Problem</Typography>
+          <Typography className={classes.pageTitle} variant='h3'>The Problem</Typography>
           <Typography variant='body1' className={classes.text}>Tonight was supposed to be fun--it was Edd's birthday party. It was supposed to be about Edd. <br />BUT Jimmy "Hook" Baggins made it about him. They work together at the Starbucks Roastery. Amazing Baristas. I could never.
       He's missing. I'm basically a detective. My name is Katie "Sherlock" Westbrook. This is my assistant, Pabi. Yes, he's a cat but he's also a aspiring model. What is your name? </Typography>
 

@@ -27,7 +27,7 @@ const Page27 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Rose "Flower" Bueller</Typography>
             <Typography className={classes.storyContent} variant='body1'>Pabi doesn't trust you Rose. Rose replies, "What?! JIMMY IS DEAD. These are not from him. These are from my ex, Ricardo. We have been seeing each other on the side. But that doesn't mean I killed him!" Well, what do you think? Seems like a dead end, {props.gameState.userName}. </Typography>
 
@@ -36,9 +36,9 @@ const Page27 = (props) => {
                 < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
               }
               {(!props.gameState.visitedPages[27].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
               }
-              <Button className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
+              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
 
             </div>
 

@@ -27,7 +27,7 @@ function HomePage(props) {
             <div className={classes.buttonGroup}>
               <Button variant='contained' className={classes.button} onClick={handleYes}>YES</Button>
 
-              <Button className={classes.button} variant='contained' href='https://m.wikihow.com/Be-a-Good-Friend'>NO</Button>
+              <Button variant='contained' className={classes.button} href='https://m.wikihow.com/Be-a-Good-Friend'>NO</Button>
             </div>
           </fieldset>
 

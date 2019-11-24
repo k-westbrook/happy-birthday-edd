@@ -27,7 +27,7 @@ const Page27 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Starbucks Roastery</Typography>
             <Typography className={classes.storyContent} variant='body1'>We enter the roastery and randomly see a bunch of people who used to hang out with Jimmy all the time. I wave at them and one of them comes over and pets Pabi, his name is Frans. While they are petting him, he says, "Jimmy hasn't worked here in over a year. I think his plan was to work a local shop so he could start his own one day. I heard he was stealing local roastery secrets. Have you talked to his co-worker Harry? Harry is my roommate and HATES him. Well, I gotta close up." </Typography>
 
@@ -36,12 +36,12 @@ const Page27 = (props) => {
                 < Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
               }
               {(!props.gameState.visitedPages[14].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
               }
               {(!props.gameState.visitedPages[17].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(17) }}>{props.gameState.visitedPages[17].button}</Button>
               }
-              <Button className={classes.button} onClick={(value) => { handleGame(19) }}>Go down the dark alley</Button>
+              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(19) }}>Go down the dark alley</Button>
 
             </div>
 

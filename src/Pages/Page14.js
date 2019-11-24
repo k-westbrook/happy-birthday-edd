@@ -23,7 +23,7 @@ const Page14 = (props) => {
     < div className={classes.pageContainer} >
       {
         props.gameState.userName ?
-          <div>
+          <div className={classes.storyContainer} >
             <Typography className={classes.pageTitle} variant='h3'>Dick's Burger</Typography>
             <Typography className={classes.storyContent} variant='body1'>Ok No one is here. Pabi will get probably get Fries and a Coke. But wait, is that the same bushel of roses we saw at the crime scene? I think that's Rose, isn't she dating Jimmy? Why does she have those roses? HMMMMM  </Typography>
 
@@ -32,9 +32,9 @@ const Page14 = (props) => {
                 < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
               }
               {(!props.gameState.visitedPages[27].visited) &&
-                <Button className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
+                <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(27) }}>{props.gameState.visitedPages[27].button}</Button>
               }
-              <Button className={classes.button} onClick={(value) => { handleGame(28) }}>{props.gameState.visitedPages[28].button}</Button>
+              <Button variant='contained' className={classes.button} onClick={(value) => { handleGame(28) }}>{props.gameState.visitedPages[28].button}</Button>
 
             </div>
 

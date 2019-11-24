@@ -28,10 +28,10 @@ const Page4 = (props) => {
               {props.gameState.visitedPages.slice(2, 5).map((button) => {
 
                 if (!button.visited) {
-                  return (<Button key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  return (<Button variant='contained' key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
                   )
                 } else {
-                  return (<Button disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
+                  return (<Button variant='contained' disabled key={button.index} className={classes.button} onClick={(value) => { handleGame(button.index) }}>{button.button}</Button>
                   )
 
                 }
