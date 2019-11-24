@@ -2,7 +2,7 @@ import main from '../images/main.jpeg'
 
 export const styleFinder = () => {
   let styles;
-  if (window.matchMedia("(max-width: 600px)").matches) {
+  if (window.matchMedia("(max-width: 812px)").matches) {
     styles = {
       AppBackground: {
         width: '100vw',
