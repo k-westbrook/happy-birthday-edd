@@ -67,7 +67,7 @@ const End = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>THE END</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>THE END</Typography>
             <Typography variant='body1'> Congrats {props.gameState.userName}!! AND HAPPY BIRTHDAY EDD! YOU AREN'T A REAL KILLER BUT YOU KILL PEOPLE WITH LAUGHTER</Typography>
             <Typography variant='body1'> You thought {props.gameState.quizAnswer} was the killer!</Typography>
             {(props.gameState.quizAnswer === "Edd") ?
@@ -84,7 +84,7 @@ const End = (props) => {
           </div>
           :
           <div>
-            <Typography variant='h3'>Page Loading...</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Page Loading...</Typography>
           </div>
       }
     </div >

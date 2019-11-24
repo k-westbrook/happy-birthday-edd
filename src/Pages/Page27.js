@@ -4,55 +4,12 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 import { visitPage } from '../Store/Game'
 import { connect } from 'react-redux'
+import { styleFinder } from '../StyleSheets/StyleFinderGeneric';
 
 
 
 
-const styles =
-{
-  pageContainer:
-  {
-    display: 'flex',
-    flexDirection: "column",
-    width: '100vw'
-  },
-  nameForm:
-  {
-
-    width: '30vw'
-  },
-  formContainer:
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: "5vh"
-  },
-  input:
-  {
-    width: '100%',
-    fontSize: '100%',
-    padding: '1vh',
-    backgroundColor: 'white',
-  },
-  inputLabel:
-  {
-    fontSize: '100%',
-    color: 'light-grey',
-    backgroundColor: 'white',
-  },
-  button:
-  {
-    backgroundColor: 'white',
-    width: "50%",
-    marginTop: '2vh'
-  },
-  buttonGroup:
-  {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  }
-}
+const styles = styleFinder();
 
 
 
@@ -71,8 +28,8 @@ const Page27 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Starbucks Roastery</Typography>
-            <Typography variant='body1'>We enter the roastery and randomly see a bunch of people who used to hang out with Jimmy all the time. I wave at them and one of them comes over and pets Pabi, his name is Frans. While they are petting him, he says, "Jimmy hasn't worked here in over a year. I think his plan was to work a local shop so he could start his own one day. I heard he was stealing local roastery secrets. Have you talked to his co-worker Harry? Harry is my roommate and HATES him. Well, I gotta close up." </Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Starbucks Roastery</Typography>
+            <Typography className={classes.storyContent} variant='body1'>We enter the roastery and randomly see a bunch of people who used to hang out with Jimmy all the time. I wave at them and one of them comes over and pets Pabi, his name is Frans. While they are petting him, he says, "Jimmy hasn't worked here in over a year. I think his plan was to work a local shop so he could start his own one day. I heard he was stealing local roastery secrets. Have you talked to his co-worker Harry? Harry is my roommate and HATES him. Well, I gotta close up." </Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[13].visited) &&
@@ -91,7 +48,7 @@ const Page27 = (props) => {
           </div>
           :
           <div>
-            <Typography variant='h3'>Page Loading...</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Page Loading...</Typography>
           </div>
       }
     </div >

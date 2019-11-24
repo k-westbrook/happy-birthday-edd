@@ -4,56 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 import { visitPage } from '../Store/Game'
 import { connect } from 'react-redux'
+import { styleFinder } from '../StyleSheets/StyleFinderGeneric';
 
-
-
-
-const styles =
-{
-  pageContainer:
-  {
-    display: 'flex',
-    flexDirection: "column",
-    width: '100vw'
-  },
-  nameForm:
-  {
-
-    width: '30vw'
-  },
-  formContainer:
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: "5vh"
-  },
-  input:
-  {
-    width: '100%',
-    fontSize: '100%',
-    padding: '1vh',
-    backgroundColor: 'white',
-  },
-  inputLabel:
-  {
-    fontSize: '100%',
-    color: 'light-grey',
-    backgroundColor: 'white',
-  },
-  button:
-  {
-    backgroundColor: 'white',
-    width: "50%",
-    marginTop: '2vh'
-  },
-  buttonGroup:
-  {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  }
-}
-
+const styles = styleFinder();
 
 
 const Page5 = (props) => {
@@ -70,8 +23,8 @@ const Page5 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Abandoned Alley</Typography>
-            <Typography variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm. Rustle, Rustle, there is a lookie loo but we could go look for others</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Abandoned Alley</Typography>
+            <Typography className={classes.storyContent} variant='body1'> Pabi is running ahead... that cat is amazing. {props.gameState.userName} don't touch the body!!! Ok let's examine it: looks like he died from being stabbed in the heart. Pabi, What's that? Pabi says he was murdered. About 3 hours ago. So around 6 pm. Rustle, Rustle, there is a lookie loo but we could go look for others</Typography>
             <div className={classes.buttonGroup}>
               {props.gameState.visitedPages.slice(9, 12).map((button) => {
 
@@ -91,7 +44,7 @@ const Page5 = (props) => {
           </div>
           :
           <div>
-            <Typography variant='h3'>Page Loading...</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Page Loading...</Typography>
           </div>
       }
     </div >

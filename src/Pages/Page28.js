@@ -4,55 +4,12 @@ import { withStyles } from '@material-ui/core/styles';
 import { Typography, InputLabel, Input, Button } from '@material-ui/core';
 import { visitPage } from '../Store/Game'
 import { connect } from 'react-redux'
+import { styleFinder } from '../StyleSheets/StyleFinderGeneric';
 
 
 
 
-const styles =
-{
-  pageContainer:
-  {
-    display: 'flex',
-    flexDirection: "column",
-    width: '100vw'
-  },
-  nameForm:
-  {
-
-    width: '30vw'
-  },
-  formContainer:
-  {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: "5vh"
-  },
-  input:
-  {
-    width: '100%',
-    fontSize: '100%',
-    padding: '1vh',
-    backgroundColor: 'white',
-  },
-  inputLabel:
-  {
-    fontSize: '100%',
-    color: 'light-grey',
-    backgroundColor: 'white',
-  },
-  button:
-  {
-    backgroundColor: 'white',
-    width: "50%",
-    marginTop: '2vh'
-  },
-  buttonGroup:
-  {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  }
-}
+const styles = styleFinder();
 
 
 
@@ -71,8 +28,8 @@ const Page27 = (props) => {
       {
         props.gameState.userName ?
           <div>
-            <Typography variant='h3'>Rose "Flower" Bueller</Typography>
-            <Typography variant='body1'>Pabi doesn't trust you Rose. Rose replies, "What?! JIMMY IS DEAD. These are not from him. These are from my ex, Ricardo. We have been seeing each other on the side. But that doesn't mean I killed him!" Well, what do you think? Seems like a dead end, {props.gameState.userName}. </Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Rose "Flower" Bueller</Typography>
+            <Typography className={classes.storyContent} variant='body1'>Pabi doesn't trust you Rose. Rose replies, "What?! JIMMY IS DEAD. These are not from him. These are from my ex, Ricardo. We have been seeing each other on the side. But that doesn't mean I killed him!" Well, what do you think? Seems like a dead end, {props.gameState.userName}. </Typography>
 
             <div className={classes.buttonGroup}>
               {(!props.gameState.visitedPages[25].visited) &&
@@ -88,7 +45,7 @@ const Page27 = (props) => {
           </div>
           :
           <div>
-            <Typography variant='h3'>Page Loading...</Typography>
+            <Typography className={classes.pageTitle} variant='h3'>Page Loading...</Typography>
           </div>
       }
     </div >
