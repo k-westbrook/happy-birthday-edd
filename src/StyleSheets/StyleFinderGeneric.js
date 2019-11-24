@@ -145,7 +145,14 @@ export const styleFinder = () => {
       {
         marginTop: '5vh',
         padding: '4vh',
-
+        display: 'flex',
+        flexDirection: 'column',
+        width: '70vw'
+      },
+      bottomHalfContainer:
+      {
+        display: 'flex',
+        justifyContent: 'center'
       },
       title:
       {
@@ -159,7 +166,7 @@ export const styleFinder = () => {
         padding: '2vh',
         minHeight: '20vh',
         fontSize: '3vh',
-        width: '60vw'
+        width: '70vw'
       },
       submitButton:
       {
@@ -257,7 +264,8 @@ export const styleFinder = () => {
       },
       paper:
       {
-        margin: '2vh',
+        marginTop: '5vh',
+        width: '30vw'
 
       }
     }

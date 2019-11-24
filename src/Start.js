@@ -25,16 +25,18 @@ const Start = (props) => {
       But now, Jimmy's missing. I'm basically a detective. My name is Katie "Sherlock" Westbrook. This is my assistant, Pabi. Yes, he's a cat but he's also a aspiring model. What is your name? </Typography>
 
         </div>
-        <Paper className={classes.paper}>
-          <div className={classes.formContainer}>
-            <form className={classes.nameForm} onSubmit={handleSetUser} >
-              <InputLabel className={classes.inputLabel} htmlFor="userName">Name</InputLabel>
-              <Input className={classes.input} id="userName" name='userName' required placeholder="Enter Your Name"></Input>
-              <Button variant='contained' className={classes.submitButton} type='submit'>Submit</Button>
-            </form>
+        <div className={classes.bottomHalfContainer}>
+          <Paper className={classes.paper}>
+            <div className={classes.formContainer}>
+              <form className={classes.nameForm} onSubmit={handleSetUser} >
+                <InputLabel className={classes.inputLabel} htmlFor="userName">Name</InputLabel>
+                <Input className={classes.input} id="userName" name='userName' required placeholder="Enter Your Name"></Input>
+                <Button variant='contained' className={classes.submitButton} type='submit'>Submit</Button>
+              </form>
 
-          </div>
-        </Paper>
+            </div>
+          </Paper>
+        </div>
       </div>
     </div >
   );
