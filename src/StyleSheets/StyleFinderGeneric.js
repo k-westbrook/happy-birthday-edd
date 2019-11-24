@@ -46,7 +46,6 @@ export const styleFinder = () => {
       formContainer:
       {
         padding: '3vh',
-        backgroundColor: 'white',
         minHeight: '10vh'
       },
       nameForm:
@@ -60,12 +59,13 @@ export const styleFinder = () => {
       {
         width: '80%',
         marginBottom: '2vh',
-        color: 'black'
+        color: 'black',
+        fontSize: '4vh'
       },
       inputLabel:
       {
         fontSize: '4vh',
-        marginBottom: '2vh',
+        marginBottom: '3vh',
         color: 'black'
       },
       storyContent: {
@@ -122,6 +122,11 @@ export const styleFinder = () => {
         width: '80%',
         fontSize: '2.5vh',
         marginBottom: '3vh'
+
+      },
+      paper:
+      {
+        margin: '2vh',
 
       }
     }

@@ -42,13 +42,13 @@ const Page9 = (props) => {
               :
               <div className={classes.buttonGroup}>
                 {(!props.gameState.visitedPages[13].visited) &&
-                  < Button className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
+                  < Button variant='contained' className={classes.button} onClick={(value) => { handleGame(13) }}>{props.gameState.visitedPages[13].button}</Button>
                 }
                 {(!props.gameState.visitedPages[14].visited) &&
-                  < Button className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
+                  < Button variant='contained' className={classes.button} onClick={(value) => { handleGame(14) }}>{props.gameState.visitedPages[14].button}</Button>
                 }
                 {(!props.gameState.visitedPages[25].visited) &&
-                  < Button className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
+                  < Button variant='contained' className={classes.button} onClick={(value) => { handleGame(25) }}>{props.gameState.visitedPages[25].button}</Button>
                 }
 
 

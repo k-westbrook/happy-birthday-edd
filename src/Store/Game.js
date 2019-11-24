@@ -1,5 +1,3 @@
-// import axios from 'axios';
-// import history from '../history'
 import { visitedPages } from './VisitedPages'
 
 /**
@@ -31,7 +29,6 @@ export const setUser = (user) => ({ type: SET_USER, user })
 export const visitPage = (pageNumber) => ({ type: VISIT_PAGE, pageNumber })
 export const endGameBad = () => ({ type: END_GAME_BAD })
 export const setQuizAnswer = (answer) => ({ type: ANSWER_QUIZ, answer })
-// const logout = () => ({ type: LOGOUT_USER })
 
 
 

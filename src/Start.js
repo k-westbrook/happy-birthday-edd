@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Typography, InputLabel, Input, Button } from '@material-ui/core';
+import { Typography, InputLabel, Input, Button, Paper } from '@material-ui/core';
 import { setUser } from './Store/Game'
 import { connect } from 'react-redux'
 import { styleFinder } from './StyleSheets/StyleFinderGeneric';
@@ -25,14 +25,16 @@ const Start = (props) => {
       He's missing. I'm basically a detective. My name is Katie "Sherlock" Westbrook. This is my assistant, Pabi. Yes, he's a cat but he's also a aspiring model. What is your name? </Typography>
 
         </div>
-        <div className={classes.formContainer}>
-          <form className={classes.nameForm} onSubmit={handleSetUser} >
-            <InputLabel className={classes.inputLabel} htmlFor="userName">Name</InputLabel>
-            <Input className={classes.input} id="userName" name='userName' required placeholder="Enter Your Name"></Input>
-            <Button variant='contained' className={classes.submitButton} type='submit'>Submit</Button>
-          </form>
+        <Paper className={classes.paper}>
+          <div className={classes.formContainer}>
+            <form className={classes.nameForm} onSubmit={handleSetUser} >
+              <InputLabel className={classes.inputLabel} htmlFor="userName">Name</InputLabel>
+              <Input className={classes.input} id="userName" name='userName' required placeholder="Enter Your Name"></Input>
+              <Button variant='contained' className={classes.submitButton} type='submit'>Submit</Button>
+            </form>
 
-        </div>
+          </div>
+        </Paper>
       </div>
     </div >
   );
