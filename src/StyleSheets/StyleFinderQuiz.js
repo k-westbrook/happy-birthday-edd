@@ -1,4 +1,4 @@
-import main from '../images/main.jpeg'
+
 
 export const styleFinder = () => {
   let styles;
