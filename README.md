@@ -13,10 +13,10 @@
 | 8 | Death |
 | 9 | Interrogate guy at scene |
 | 10 | Look for clues |
-| 11 | Start Page |
-| 12 | Look for Jimmy |
-| 13 | Start Page |
-| 14 | Look for Jimmy |
+| 11 | Interrogate random teen |
+| 12 | Bad Friend End |
+| 13 | Local Coffee Shop |
+| 14 | Dick's |
 | 15 | Start Page |
 | 16 | Look for Jimmy |
 | 17 | Start Page |
