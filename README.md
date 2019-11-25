@@ -26,11 +26,11 @@
 | 21 | Beer Conversations |
 | 22 | Question Edd More |
 | 23 | Win Ending (asks right questions) |
-| 24 | Look for Jimmy |
-| 25 | Start Page |
-| 26 | Look for Jimmy |
-| 27 | Start Page |
-| 28 | Look for Jimmy |
-| 29 | Start Page |
+| 24 | Ask wrong questions End |
+| 25 | Fremont Brewing |
+| 26 | Talk to Barista Working at local coffee shop |
+| 27 | Starbucks Roastery |
+| 28 | Confront Rose |
+| 29 | Serial Killer Drink |
 
 
