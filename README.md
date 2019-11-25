@@ -4,14 +4,15 @@
 | ----------- | ----------- |
 | 0 | Start Page |
 | 1 | Look for Jimmy |
-| 3 | Start Page |
-| 4 | Look for Jimmy |
-| 5 | Start Page |
-| 6 | Look for Jimmy |
-| 8 | Start Page |
-| 8 | Look for Jimmy |
-| 9 | Start Page |
-| 10 | Look for Jimmy |
+| 2 | Starbucks at Pike Place |
+| 3 | Alley |
+| 4 | Warehouse |
+| 5  | Investigate Body |
+| 6 | Call Police |
+| 8 | Faint (no page) |
+| 8 | Death |
+| 9 | Interrogate guy at scene |
+| 10 | Look for clues |
 | 11 | Start Page |
 | 12 | Look for Jimmy |
 | 13 | Start Page |
