@@ -1,5 +1,8 @@
 #happy-birthday-edd
 
+Below is a table to make quick references to scenarios found in the VisitedPages
+Array in /Store as well as the Page Components in /Pages.
+
 | PageNumber | Scenario |
 | ----------- | ----------- |
 | 0 | Start Page |
