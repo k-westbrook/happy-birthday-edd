@@ -9,7 +9,7 @@
 | 4 | Warehouse |
 | 5  | Investigate Body |
 | 6 | Call Police |
-| 8 | Faint (no page) |
+| 7 | Faint (connects to 8) |
 | 8 | Death |
 | 9 | Interrogate guy at scene |
 | 10 | Look for clues |
@@ -17,15 +17,15 @@
 | 12 | Bad Friend End |
 | 13 | Local Coffee Shop |
 | 14 | Dick's |
-| 15 | Start Page |
-| 16 | Look for Jimmy |
-| 17 | Start Page |
-| 18 | Look for Jimmy |
-| 19 | Start Page |
-| 20 | Look for Jimmy |
-| 21 | Start Page |
-| 22 | Look for Jimmy |
-| 23 | Start Page |
+| 15 | Edd's Party Start |
+| 16 | Chase Teen |
+| 17 | Go to Party Too Early End |
+| 18 | Edd Kills You |
+| 19 | Leave Too Early End (connects to 8) |
+| 20 | Pill Death (connects to 18) |
+| 21 | Beer Conversations |
+| 22 | Question Edd More |
+| 23 | Win Ending (asks right questions) |
 | 24 | Look for Jimmy |
 | 25 | Start Page |
 | 26 | Look for Jimmy |
