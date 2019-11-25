@@ -5,7 +5,7 @@ Array in /Store as well as the Page Components in /Pages.
 
 | PageNumber | Scenario |
 | ----------- | ----------- |
-| 0 | Start Page |
+| 0 | Start Page (listed outside of /Pages)|
 | 1 | Look for Jimmy |
 | 2 | Starbucks at Pike Place |
 | 3 | Alley |
